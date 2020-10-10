@@ -1,0 +1,139 @@
+* Secure Software Concepts 1
+
+** project failure reasons:
+- Late delivery
+- Overbudget
+- Fails to meet user expectations
+
+** good idea:
+- Integrate security early on
+
+
+Define -> Design -> Develop -> Deploy
+       	  	    	       |< Security comes first only here!
+
+
+** What is security?
+- for security professional
+-- protection
+-- safety
+-- confidentiality, integrity, availability
+-- trust
+
+"security is everyone's business"
+
+"create interest and explain!"
+"show progress"
+
+- security is based on the culture of the organization
+
+- "make security simple"
+
+" security is about the survival of the organization
+-- protection of jobs
+-- compliance with laws
+-- customer trust and satisfaction
+
+"Application security is importent"
+- primary attack surface
+- controls access to data and data sources
+- reliable operations is essential for attainment of business mission
+
+** Core concepts
+
+"CIA triad"
+
+*** Confidentiality
+- protection of sensitive data
+-- if data to wrong hands it would cause harm to individual or organization
+
+--Personally identifiable information (PII)
+--- information that could be used to identify an individual or their location
+-- Protected health information (PHI)
+-- Payment Card Data (PCI-DSS)
+
+-- Unauthorized disclosure
+--- Poor data display/unmasked fields on screen
+--- employess sharing data with co-workers/outsiders
+--- Sensitive data on reports - credit card receipts with entire credit card data
+
+
+--- masking/obfuscation
+--- view based access controls
+--- encryption
+
+"A core requirement of security is to protect sensitive data from improper disclosure."
+-> "Legal and contractual requirement"
+
+*** Integrity
+
+- Protection of sensitive data
+- Protection of integrity of systems processing
+--> ATM shows correct amount of money and transfers correct amount of money
+- Protection from improper modification or alteration
+-- Accidental (noise)
+-- Intentional (fraud)
+
+- assure data is same before sending through network
+- field truncation
+- incorrect rounding/calculations
+-- "salami attack" -> shave little bits of money off a transaction
+
+
+- Digital signature
+-- Prove the integrity and authentication of the message
+--- who did the message come from?
+-- Proof of sender (non-repudiation)
+-- Proof that the message was not altered in transit
+
+- Protection of software code
+-- code signing
+-- Proof that software is:
+--- from a trusted source
+--- has not been modified
+-- prevents infection (trojan horse) of software
+
+- Reliability
+-- Trust in the integrity of data
+--- Accuracy of financial reports (SoX)
+
+"A core requirement of security is to protect sensitive data from unauthorized modification."
+
+"Compliance and security of data processing."
+
+*** Availability
+
+- Ensuring systems and data reliably support mission/business needs
+- Determine business availability requirements
+- Is often referred to as criticality
+
+- Single points of failure
+-- The mission requires information to be accessible in a timely manner
+--- Prevent system failure
+--- Prevent data loss
+-- Idenfity single points of failure
+--- where failure in single thing can cause system level failure
+
+- Failover
+-- Providing redundant facilities or capabilities so that the failure of a single component will not interrupt service
+-- Failover should be an automatic process that will cause the system to fail over to the secondary or alternate component in the event of failure of the primary component
+
+- Replication and clustering
+-- Duplication of equipment/networks/processing capability
+-- May be used in *load sharing * or as a failover
+-- Some systems will require a manual cutover to the alternate system
+--- this means that failover may need to be manually turned on I think
+
+- Scalability
+-- The ability to adjust equipment to meet capacity requirements
+-- One of the main advantages of the cloud
+--- Self-service, on demand capacity
+-- Allows rapid adjustment to increase or decrease capacity
+
+- Resiliency
+-- Robustness - ability to withstand attack or equipment failure
+-- Ability of a system to operate in adverse conditions
+--- Perhaps at a degraded level of performance
+
+"A core requirement of security is to ensure the availability of systems and information to meet mission requirements."
+"Availability is the prevention of destruction of data or systems and the ability to maintain operational capability."
