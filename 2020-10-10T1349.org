@@ -1,0 +1,68 @@
+* Secure software concepts - Single Sign-On
+- Remove the requirement for a user to remember dozens of user IDs and passwords.
+- Supports the concept of centralized management.
+- Regulatory compliance: Can help organization to improve overall security and to be able to prove that they are managing access appropriately for all users, thereby being compliant with the regulations.
+- Centralized means we have a consistent process with is then appliad across many different systems.
+- It's really "reduced sign-on" not in fact "single". Difficult to apply to all legacy systems and all various types of systems and applications we need today. We can however reduce sign-ons.
+
+** Centralized vs De-centralized
+*** De-centralized
+- In de-centralized system local managers have the responsibility for managing access for the users within their direct area.
+- Good for manager to be able to precisely set access rights.
+- Can respond quickly if there was a problem and an access must be changed.
+- Serious problem: we have different managers doing things different ways. We will have inconsistencies and in some areas maybe the information
+access is very well-controlled whereas in others it may be very loose and improperly managed.
+*** Centralized
+- Means we have one procedure, one process that applies to all of these various systems. No matter where you are within the organization, access is
+regulated, granted and taken away from that *one central group* that manages access on a daily basis.
+*** Consistency and regular control
+*** defined procedures vs flexibility
+- Not flexible, if remote office needs to give access to a junior employee when regulars are sick. It may take hours or even days to go through the procedure.
+
+** Registration and Proof of Identity
+*** Validation of application
+*** Proof of possession
+
+** Advantages
+*** Stronger passwords (maybe people select stronger passwords because same password is used in multiple places)
+*** Clipping levels
+- Clip off account after multiple failed attempts to authenticate.
+- With single sign-on this will apply consistently to all systems.
+
+** Implementation: Kerberos
+- Earlier known as Athena.
+*** Built on idea of having a Key Distribution Center (KDC).
+**** Authentication Server (AS)
+- Authenticates the user.
+**** Ticket Granting Server (TGS)
+- Grants an access control ticket to the user.
+*** The idea of Kerberos
+1) You go to an amusement park, show up and buy a ticket.
+2) You are then authenticated.
+3) You go to turnstile and you are given then a wristband.
+4) You can go and ride the rides all day long.
+- Kerberos is like the park, where you are only really authenticated once, and then you're granted access that will allow you to use all of the resources in behind that portal for an extended period of time.
+*** The problem (Single point of failure)
+- Could also present a single point of failure where a person's access is blocked because of a failure of the technology, and therefore is unable to access anything. 
+- Key Distribution Center must be replicated and be physically protected as well.
+*** Based on symmetric keys
+- A key is set up when a user is first registered, and that key will be shared with the KDC. 
+- Weakness: can be subject to a man in the middle attack.
+*** Time stamped tickets
+- Ticket only good for certain length of time.
+
+
+** Implementation method: Federated Identity Management
+*** Security Assertion Markup Language (SAML)
+*** Open Authorization (OAUTH)
+
+** Access Control Implementations
+*** Access Control Lists
+
+*** Access Control Matrix
+
+*** Lightweight Directory Access Protocol (LDAP)
+
+"Single sign-on has many security benefits including the *need to remember fewer passwords* and *ease of use for users*."
+
+"However, single sign-on can also present a single point of access, and a single point of failure for the organization."

@@ -1,0 +1,49 @@
+* Secure software concepts - Biometrics
+
+** Behavioral based biometrics
+*** Voice print
+*** Signature dynamics
+- How you sign your name?
+- What's the acceleration, pressure?
+*** Keystroke dynamics
+- Everyone who types has a certain unique hand. What's the delay rate and how long you hold down a key, or how quickly you move between keys?
+
+** Physiological based biometrics
+*** Iris scan
+- Colored portion around the pupil of the eye
+*** Retina scan
+- Looking at the pattern of blood vessels in the back of the eye.
+*** Palm print
+- Patterns on skin and blood flow under skin etc. Venous scan.
+*** Fingerprint
+*** Facial recognition
+
+
+** Biometric acceptance
+*** User concerns
+- Privacy. If someone steals biometric data there's no way to replace that.
+- Cleanliness. Who was the last person to touch?
+- Delay in productivity and performance. How long does it take for this biometric to process my credentials to let me onto the system? How much is it going to delay me so many times a day?
+*** Cost
+*** Maintenance/registration
+  
+
+** Types of biometric errors
+*** Type 1 error (false reject rate - FRR)
+- Someone was rejected erroneusly and had to go through an alternate process to get in.
+*** Type 2 error (false acceptance rate - FAR)
+- Someone was erroneusly let in.
+*** Sensitivity goes up -> FRR increases, FAR decreases.
+*** Crossover error rate - CER (or "equal error rate")
+- In this point the biometric device is most accurate.
+- If a secure system, not even 1% CER could be ok, but sensitivity must be increased even if there come more false rejection.
+
+** Multi-factor (Strong) Authentication
+- A lost or stolen key/smartcard.
+- A stolen password could allow someone to get into a system.
+- There have been successful attacks against biometrics using everything from high resolution cameras to gelatin to be able to make fake identifiations.
+
+- Use of two or three of the three authentication factors.
+- Cannot use multiple times same region, like both token and smartcard.
+
+"Identification enables accountability and authentication validates the identity of the entity requesting access."

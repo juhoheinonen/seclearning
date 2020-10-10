@@ -1,11 +1,11 @@
-* Secure software concepts 2
+* Secure software concepts - Authentication
 
-** Authentication
 - Applications are often at the front edge of systems and are the primary point of access for data and systems.
 - The application can present an entry point for unauthorized access or activity.
 
-- Identification and Access Management (IAM)
--- Identification
+*** Identification and Access Management (IAM)
+
+*** Identification
 --- It's important to know who or what is attempting to gain access to our systems, networks, data, facilities
 --- Unique
 ---- Cannot use shared id for different users
@@ -17,33 +17,33 @@
 --- Provides accountability
 ---- E.g. userId, employee Id, badge Id, customer account Id.
 
--- Authentication
+*** Authentication
 
 --- Verify, validate, prove the ID.
 --- Ensure that only the rightful user is using the identity provided.
 
---- Methods of authentication
----- Knowledge
+**** Methods of authentication
+***** Knowledge
 ----- Passwords
 ----- Passphrases
 ----- Secret questions
 ----- PIN numbers
 
----- Ownership
+***** Ownership
 ------ Smartcards - dynamic, one-time passwords
 ------ Badge/ID card
 ------ Tokens
 ------ Keys
 
----- *Characteristic*
+***** Characteristic
 ----- Something you are as a person.
 
 "Access control is all abouit *PERMITTING* access to the assets of the organization - networks, buildings, systems and data."
 -- Not rejecting, but permitting.
 -- In order to permit access all entities must be identified or authenticated
 
--- Authorization
+*** Authorization
 
--- Accounting
+*** Accounting
 --- Sometimes referred as "auditing".
 
