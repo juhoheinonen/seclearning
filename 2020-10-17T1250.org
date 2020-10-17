@@ -1,3 +1,38 @@
 * Secure software concepts 6: Credential management
 
+** Credential management systems
+
+*** Secure issuance and management of smart cards and smart USB tokens
+*** Public key infrastructure (PKI) certificates
+*** One-time passwords (OTPs)
+- Can't be subject to reply attack.
+*** Biometrics
+
+** Credential management
+- May support a diverse and dispersed user population.
+  --- Support centralized access control.
+- Can be managed remotely.
+- Credentials may be re-issued when necessary.
+
+** Credential-based Authentication
+- May be offered internally or by a third party acting as a Credential Service Provider (CSP).
+- Provides Authentication services to websites of several organizations.
+- Usually based on hardware tokens or smartcards.
+
+** Credential management considerations
+- Credentials are some of the most desirable targets for attackers.
+- Insecure credential issuance leads to increased risk.
+- Policies and practices must be developed to support credential management.
+
+** Credential management system risk
+- Attackers that compromise a credential management system can gain undetected privileged access to systems.
+- Re-issuing credentials can be expensive and time-consuming.
+  -> Especially if you have to send new tokens or smart cards.
+- Performance may be impacted by delays in processing credentials.
+  -> Network connectivity issues to central management etc.
+- Poor use of credentials (e.g. poor protection) may compromise the system.
+
+** Key points
+- Ensuring that all users have the correct levels of access can be done through credentials, PKI, and certificates.
+- This provides the correct levels of entitlement and permissions to protect sensitive data and systems.
 

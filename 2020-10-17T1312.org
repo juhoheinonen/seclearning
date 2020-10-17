@@ -1,0 +1,46 @@
+* Secure software concepts 7: Accounting
+- Also known as auditing
+- Tracking 
+  -> Ensuring we have a record of all activities on the system, as well as being able to associate that activity with the entity that performed that activity.
+- Logging
+- Recording
+  -> Operations and transactions, so we have a record of what changes were made and who made those changes. 
+- Associationg all activity on a system with the user(s) (entities) involved in the activity.
+
+** Accounting
+- Provides proof of compliance.
+  -> Logs are important for that
+- Documents all changes and associated actor.
+  -> A living record of what is the current state of a system.
+- Provides evidence required for forensics.
+
+** Protection of logs
+- May contain sensitive information.
+- Must be protected from alteration or deletion.
+  -> Write off logs to a "write once, read many" device.
+- Hash values.
+  -> Prove the  integrity of the log.
+  -> Even if a single bit was changed, the hash would be substantially different.
+
+
+** Reviewing logs
+- There should be a process in place that takes a look at what logs we have and reviews them.
+
+- May indicate ongoing attacks, or attack precursors.
+- Indicate attempts to access unauthorized content.
+- *Review key logs - not all logs.*
+ 
+** Log retention
+
+- Keep logs as long as required for
+  -> Business purposes
+  -> Legal requirements 
+- Ability to read archived log files.
+  -> Ensure that logs are in format that you can access later even if technology changes.
+
+** Key points
+
+- Identity management is driven by the IAAA model (identification, authenticaion, authorization, accounting).
+- All activity on a system should be tracked to enable accountability and to ensure regulatory compliance.
+- Organizations must always seek a better, more efficient access control system that enforces access rules but does not unduly impact business operations.
+- Establish accountability and compliance with regulations.
