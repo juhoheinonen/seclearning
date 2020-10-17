@@ -1,0 +1,3 @@
+* Secure software concepts 6: Credential management
+
+

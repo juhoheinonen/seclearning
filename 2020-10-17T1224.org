@@ -1,0 +1,64 @@
+* Secure software concepts 5: Authorization
+
+** Identification, Authentication, Authorization, Accounting (~= Auditing)
+
+** Authorization
+- The rights, privileges and permissions granted to an authenticated user
+
+*** Permissions
+- Read, write, update
+- Execute, create, delete
+- *Least privilege*: only give a person the minimum level of rights to be able to do their job and *only for the time they need it*.
+- *Need to know*
+- Separation of duties
+  - dual control, mutual exclusivity
+  - no one person controls an entire transaction from its inception to its completion
+  - important in sensitive tasks, such as financial transaction. The transaction is broken into many separate tasks
+    and different person has to execute each task. This can be enforced using practices such as dual control.
+    - Dual control example: two person needed to open a safe, 1st person knows one combination, 2nd another, both needed to open.
+    - Mutual exclusivity: one person can input data, but not authorize or then approve the data.
+
+**** Need to know
+- Usually precedes Least Privilege.
+- Only grant access based on business need to know.
+  - PCI DSS says that access to card-holder data should only be granted on a business need to know basis.
+- Hide or obfuscate sensitive data.
+  - Not showing at all or masking.
+
+**** Least Privilege
+- Only granting an entity the minimal level of access necessary for them to perform their job.
+- And only for the time they need it.
+  - E.g. a user id only works during normal business hours.
+
+**** Separation of duties
+- Also known as segregation of duties.
+- Prevents fraud and errors.
+  - E.g. someone checks my expense requests and work hours before they are confirmed.
+- Mutual exclusivity (mutex), dual control "four eyes" principle.
+
+**** Privileged Access Levels
+
+- Network administrator
+- Application administrator
+- Database administrator
+  - They have a lot of trust. We compensate it by e.g. additional monitoring and principle of dual control.
+- PKI administrator.
+  - Looks after certificates for the organization.
+
+**** Access Permission Growth
+- Increase in access permissions beyond current job requirements
+  - Staff movement: person stays long in same company, moves from different units to another and has lots of remaining rights from earlier positions.    
+  - Violates least privilege
+- May lead to wasted licenses, unused accounts, fraud
+  - "Cuckoo's egg"
+
+**** Entitlement
+- A granula form of access control that grants access to individuals based on
+***** When
+***** Context
+- Maybe based on work role.
+***** Where
+- Working at office vs remotely. Entitlement is greater if they are in more secure environment.
+
+** Key points
+Since applications enable access to information it is critical to ensure that the application restricts access to authorized users and authorized functions.
