@@ -1,0 +1,24 @@
+* Secure software core concepts 8: Repudiation
+- Refuse to accept or be associated with an activity.
+- Deny the truth or validity of a document or agreement.
+- Refuse to fulfill an agreement or contract.
+
+** Non-repudiation
+- Proof of integrity of a transasction or a document.
+- Proof of origin of a message or action.
+
+- Often based on PKI = Public Key Infrastructure (asymmetric/public key cryptography)
+
+- A certicate validates or authenticate who that person is.
+- Certificate issuance, storage, and revocation
+---> Issuance = that certificate belongs to that person.
+
+** Certificates
+- Issued based on the X.509v3 standard.
+- A certificate binds (links) a public key with the owner of the public key.
+
+*** Certificate authority
+*** Registration authority
+*** Certificate revocation list
+*** Certificate expiry
+

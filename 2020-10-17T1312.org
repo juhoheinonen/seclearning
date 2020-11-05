@@ -1,4 +1,4 @@
-* Secure software concepts 7: Accounting
+* Secure software core concepts 7: Accounting
 - Also known as auditing
 - Tracking 
   -> Ensuring we have a record of all activities on the system, as well as being able to associate that activity with the entity that performed that activity.

@@ -1,4 +1,4 @@
-* Secure software concepts - Authentication
+* Secure software core concepts - Authentication
 
 - Applications are often at the front edge of systems and are the primary point of access for data and systems.
 - The application can present an entry point for unauthorized access or activity.

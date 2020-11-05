@@ -1,4 +1,4 @@
-* Secure software concepts - Single Sign-On
+* Secure software core concepts - Single Sign-On
 - Remove the requirement for a user to remember dozens of user IDs and passwords.
 - Supports the concept of centralized management.
 - Regulatory compliance: Can help organization to improve overall security and to be able to prove that they are managing access appropriately for all users, thereby being compliant with the regulations.

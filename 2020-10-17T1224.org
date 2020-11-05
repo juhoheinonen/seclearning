@@ -1,4 +1,4 @@
-* Secure software concepts 5: Authorization
+* Secure software core concepts 5: Authorization
 
 ** Identification, Authentication, Authorization, Accounting (~= Auditing)
 

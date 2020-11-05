@@ -1,0 +1,49 @@
+* Secure softwre concepts 1: Secure design principles
+
+** Security must be designed into information systems including:
+- Applications
+- Networks
+- Hosts
+- Databases
+
+** Implementation of security concepts
+- Security is enforced through the use of *controls*.
+- Controls must be:
+  - designed
+  - developed
+  - implemented
+  - configured
+  - operated
+  - monitored
+  - improved
+
+*** Justification for Controls
+- RISK
+The likelihood of a threat exploiting a vulnerability and thereby causing damage to an asset.
+
+*** Types of Controls
+- managerial/administrative (policies etc.)
+- technical/logical
+- physical/environmental/operational
+
+*** Controls are:
+- a limitation
+- a hindrance
+- a cost
+
+*** Examples of controls
+- least privilege
+- separation of duties
+- defense in depth
+- fail safe
+- economy of mechanism
+- complete mediation
+- open design
+- least common mechanism
+- psychological acceptability
+- leveraging existing components
+- eliminate single points of failure
+
+"Security concepts are implemented through controls."
+"Controls are justified by risk."
+"All three types of controls are needed: managerial, technical, and physical."

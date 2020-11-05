@@ -1,0 +1,54 @@
+* Secure software concepts 3: Frame risk
+
+
+Frame risk or risk context
+
+- To understand the risk environment.
+- what environment will the system exist in.
+  -> Legal
+  -> Management
+  ---> How much risk will they tolerate, are they looking for security or ready to take risks for a bigger reward.
+  -> Operational (debt etc.)
+- What levels of sensitivity and criticality apply to this system.
+  -> Sensitivity is often about confidentiality and integrity, criticality about availability.
+
+[[./risk_management.png]]
+
+** Threat source identification
+*** natural
+- fire
+- floods
+
+*** human
+- insider
+- external
+- intentional
+- unintentional
+
+*** circumstantial
+- fire next door
+
+*** environmental
+- power
+
+** Knowing ourselves
+- vulnerabilities
+- pre-disposing conditions
+
+** Likelihood/probability
+- past events
+- future events
+
+** Impact/consequence
+- monetary damage
+- reputational damage
+
+
+
+** Purpose of risk assessment
+- Provide support for the development of a control framework to address business and IT risk.
+
+
+"Risk is a function of business." - part of business.
+"Management's appetite for risk must be defined."
+"Risk to information systems is dependent on their operational environment."

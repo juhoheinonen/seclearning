@@ -1,0 +1,39 @@
+* Secure software core concepts 9: Digital signatures
+
+** Support both:
+   - Message integrity
+   - Proof of origin (nonrepudiation)
+
+** Does not provide confidentiality of a message.
+
+** Creation of digital signatures
+- Calculate a hash value of the message to be validated.
+  --- SHA-512
+- Proves message identity.
+  --- Hashes are incredibly sensitive for any change in the document.
+
+*** Hashing
+- Calculates a fixed length value based on the content of the message to be hashed.
+- Very sensitive to any changes in the message.
+- Encrypt the hash of the message with the private key of the sender of the message.
+- Proves source of the message & integrity.
+
+*** Private key
+- The private key of the sender is *only* known to the sender.
+- A message encrypted with a private key can only be opened using the corresponding public key.
+- Opening an encrypted (signed) message with the public key of the sender of the message proves that thre message came from the sender.
+
+*** Hash comparison
+- When the recipient receives the message with the appended digital signature, the digital signature is opened with the sender's public key.
+- The public key may be verified by a certifiate issued by a certificate authority.
+- This provides proof of origin.
+
+- The recipient of the message hashes the message he/she received.
+- This hash should match the value of the hash signed by the sender.
+- This provides proof of integrity - the message has not been changed - either accidentally or intentionally - in transit.
+
+"Digital signature does not provide message confidentiality."
+"Digital signature is a hash of the original message. The hash is encrypted with the private key of the sender."
+
+"The CIA triad is an effective method of defining security objectives."
+"Security must be designed into the software."

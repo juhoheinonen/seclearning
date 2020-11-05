@@ -1,4 +1,4 @@
-* Secure software concepts 6: Credential management
+* Secure software core concepts 6: Credential management
 
 ** Credential management systems
 

@@ -1,4 +1,4 @@
-* Secure software Concepts 1
+* Secure software core Concepts 1
 
 ** project failure reasons:
 - Late delivery
