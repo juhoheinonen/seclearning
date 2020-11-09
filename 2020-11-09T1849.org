@@ -1,0 +1,39 @@
+* Secure software concepts 7: least privilege
+
+- grant minimum level of access required, only for the time it is needed
+
+- confidentiality
+  - protect sensitive data from compromise
+
+- integrity
+  - protect sensitive data from corruption or modification
+
+- availability
+  - prevent execution of high level functions or operations
+
+** Least privilege
+
+- read only
+- *write only*
+  - when applications passes information to another application, they cannot read them later
+- read/write
+  - higher risk
+- create
+- delete
+- execute
+
+** Implementation
+- separation of duties
+- menus
+- temporal isolation
+  - user of an account can only work in set times
+  - logging out all other users when doing a system level operation
+- physical controls (ATMs)
+
+** Exception handling
+- process to temporarily permit a higher level of access when required
+  - Admin rights
+  - Entitlements
+
+
+

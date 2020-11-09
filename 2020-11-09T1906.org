@@ -1,0 +1,43 @@
+* Secure software concepts 9: separation of duties
+
+- also called Segregation of duties
+- ensure that a sensitive transaction must require the involvement of more than one entity
+- no one person can control a sensitive transaction from start to finish
+
+** Purpose
+- prevent and detect fraud
+- prevent errors
+
+** Enforcing separation of duties
+
+- dual control
+- multi-party control
+
+- balancing
+  - see that money balance is ok
+
+- mutual exclusivity (mutex)
+  - one who inputs expense report cannot accept it
+
+- systems authorization
+  Different peoples' consent is needed in company to do big changes in systems
+
+** Protecting sensitive information
+
+- Secret sharing
+- split knowledge
+- escrow
+
+** Risk of collusion
+- two parties work together to circumvent separation of duties
+
+** Preventing collusion
+- job rotation
+  person doing approval is changed often
+  knowledge and work expertise is shared to more people
+- mandatory vacations
+  try to detect if approval person is doing fraud scheme
+
+** Key points
+
+- Separation of duties is intended to prevent or detect fraud or mistakes

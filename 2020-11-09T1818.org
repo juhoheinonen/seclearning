@@ -1,0 +1,59 @@
+* Secure software concepts 4: Risk treatment/response
+
+
+** Based on
+- The results of the risk assessment
+- Mangement's attitude to risks
+  -> How much risk they accept etc.
+- Legal requirements
+
+
+** Avoid risk
+- Cease or decide not to participate in the risk activity.
+  -> Not give loan to a person bank owner does not trust that can pay back
+  -> But if bank clerk never gives  loan, then he/she is going to lose job.
+
+ - Transfer/share
+   -> Share the risk with another party (insurance)
+- Accept
+  -> Decide to accept the consequences of the risk
+  -> Bank accepts some risk
+
+- Reduce/mitigate
+
+- Implement new controls or enhance existing controls to reduce risk
+  -> For example buy new tires before going to a long car trip.
+  -> Seat belts uin car
+
+** Residual risk
+- Risk that still remains after the implementation of controls
+
+** Risk acceptance
+- The level of risk that management is willing to bear/lose
+
+** Cost/benefit analysis
+- the benefit realized by a control versus the cost of the control
+
+
+** Risk monitoring
+- Risk is dynamic
+  -> Can be affected by changes in:
+  ---> Operational environment
+  ---> Technology
+  ---> Laws and regulations
+  ---> New vulnerabilities
+  ---> New threats
+  ---> Effectiveness of controls
+
+** Risk reporting
+- give management with data required for
+  -> Governance
+  -> Compliance
+
+** Key points
+- Risk treatment is comprised of:
+  -> Avoidance
+  -> Acceptance
+  -> Reduction
+  -> Transfer/share
+- Risk is always changing and must be monitored

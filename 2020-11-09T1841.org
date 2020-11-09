@@ -1,0 +1,42 @@
+* Secure software concepts 6: Need to know
+
+- confidentiality
+- accountability
+
+- we need to know who should be able to access confidential information
+
+** Need to know essentials
+
+- classification
+  Which asset needs to be protected and which don't
+- ownership  
+  There's need to decide who is the owner of the assets
+- clearance
+  Permissions which are given to different users
+
+** Justification for need to know
+- protection from unauthorized disclosure of information
+  - Prevent loss of intellectual property (IP)
+  - Protect competitive data (proposals)
+  - Legal compliance
+
+
+** Problems with need to know
+- Reduce the ability to share ideas and collaborate
+  - Duplication of effort
+  - Incorrect decision making
+  - impact on performance
+  - impact on morale
+
+** How to implement need to know in applications
+
+- Labels and classification
+- Access control procedures
+  - Granular
+- Database views
+- Masking data on screens
+
+** Key points
+
+- need to know is a critical component of systems design
+- prevent access to information or systems that *is not required*

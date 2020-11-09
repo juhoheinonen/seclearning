@@ -1,0 +1,68 @@
+* Secure software concepts 5: Information systems' controls
+
+** Provide reasonable assurance that
+- Business goals and objectives will be achieved
+- Undesired events will be prevented or detected and corrected
+
+** Controls
+- Operate at all levels within an organization to mitiaget risk
+- Each individual within an organization must possess an appropriate risk culture and ensure control effectiveness.
+  
+** Types of controls
+
+- Preventive
+  Prevent bad things
+
+- Detective
+  Detect bad things
+
+- Corrective
+  Fix situation after  bad things have happened
+
+- Manual
+
+- Automated
+  Security event system
+
+** Purpose and justification of controls
+- Mitigate risk
+- Protect business assets and enable attainment of objects
+
+** Designing controls
+
+- Ensure that 'right' controls are in place and:
+  - That the controls are effective to mitigate the risk
+  - Cost-effective
+  - Being managed and monitored
+    Firewall is good but of limited use without people managing and monitoring it.
+  - Ensuring that residual risk levels are acceptable
+    - Try to evaluate correctly residual risk
+
+** Control frameworks
+- Cobit 5
+- ISO/IEC 27001, ISO/IEC 27002
+- SP800-53
+
+** General controls
+- Policies
+- Procedures
+  Maybe about updating and keeping systems up-todate 
+- Physical controls
+  Access to server room
+- Administrative controls
+- Accounting controls
+- Operational controls
+
+** System specific controls
+ Controls implemented on an information system
+  - Protect sensitive and critical functions
+  - Safeguard access to systems and data
+
+** Key points
+- Controls are implemented to deal with risk
+- Preventive
+- Detective
+- Corrective
+- Administrative
+- Technical
+- Operational/physical

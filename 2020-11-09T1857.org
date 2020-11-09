@@ -1,0 +1,37 @@
+* Secure software concepts 8: access control
+- applications enable access to sensitive information
+- applications handle users with different access level
+- each user must be restricted to the correct level of access
+- especially when one application calls another process
+
+** Purpose
+
+- *permit access* in an efficient and appropriate manner
+  - allow access, not deny!
+- Restrict unauthorized access whether to read or to modify
+
+** Methods of implementing access control in information system
+- PKI (public key infrastructure)
+  - Allows us to establish authenticity of the users
+- Federated management or other third party methods
+- internal controls
+- physical controls (user interface)
+
+** Privileged access
+- major security concern is users with privileged access levels
+  - should be limited to personnel with a requirement for higher level permissions
+  - may be a problem when *developers code with privileged access* and the system does not operate properly in production for *users with lower privileges*
+  - may require compensating controls
+  - additional monitoring?
+
+** Runtime
+
+- run time refers to when a process is executing (running) on a system
+  - often uses privileged state (level of permission)
+  - may require administrator approval to execute
+  - systems shouild restrict apis from automatically running privileged programs
+  - can be corrupted by malware
+
+** Key points
+
+- Access controls require careful setup and monitoring to ensure appropriate levels of access are given to all users, systems and processes
