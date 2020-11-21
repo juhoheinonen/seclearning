@@ -1,0 +1,54 @@
+* Secure software requirements 2: Gatherind requirements
+
+** Observation
+- Follow how clients people how are they are working.
+- Actually observe and document the process. Why are they doing that?
+- Henry Ford was told "We need a faster horse". Car did not answer literally to that but it was a really good solution to the true need and a totally new approach.
+
+** Interviews (PNE)
+- Interview effectively, using open questions.
+- Protection Needs Elicitation.
+- To elicit = to draw out.
+- I want to draw out the need and knowledge the person has.
+- So that we build a solution that helps client do their job everyday.
+
+** Documentation
+- Gather information about the company and its future.
+- e.g. will the company try to extend to new areas or business areas.
+- Understand how to relate the documentation to interviews and observation.
+
+** Standards (PCI-DSS)
+- e.g. a company has to do with payment cards.
+- Projects fail often because they are in conflict with standards.
+
+** Functional requirements
+- what will the system do.
+- how will the system meet business requirements.
+- what is the primary data flow through the system.
+
+** Non-functional requirements
+- error handling
+- logging
+- support auditing
+  -> Compliance. We have to be able to demonstrate that we have protected data adequately.
+- access controls
+
+** SDLC (software development life cycle)
+
+- Traditional software devel
+
+- System/business owner
+  -> Describes functional requirements
+
+- The easiest way to help ensure project success is to follow a defined methodology.
+  Define, design, develop, deploy. 4D model.
+  Very often securirty is involved first time only in deploy phase. It's far too late to be effective.
+  Security-conscious software development: *security is involved in every phase*.
+  Security definitions are documenteed during the define requirements phase.
+  Security is designed into the solution. And the security solutions are developed and deployed as the system is built.
+  Deliver a SECURE working product.
+
+** Key points to review
+- Failure to gather requirements correctly will almost certainly lead to project Failure
+- Requirements must be complete and forward-thinking
+- Both functional and Non-functional requirements must be gathered

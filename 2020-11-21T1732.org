@@ -1,0 +1,23 @@
+* Secure software requirements 1: Identify security requirements
+
+- Need to *discover* the security requirements of a system.
+- Often the we as security professionals have to help client discovers security requirements.
+
+** Software requirements
+- projects often fail because
+  -> Requirements are wrong
+  -> Requirements are incomplete
+  -> Requirements change
+  -> The business changes
+
+- Requirements are often wrong because of:
+  -> Poor requirements gathering.
+     - not talking to the right people
+     - *not understanding the business problems that need to be solved*. Often people design the new system based on existing business process even though changes would be needed.
+     - Lack of understanding technology.
+
+- Requirements
+  -> must be based on both current and future needs. Business is evolving, and we must build systems that are flexible enough to change when needed.
+  -> Must consider how the system will fit into its operational environment. Problem: we build an excellent system but it's independent. Today we have to design enterprise-wide solution that integrates seamlessly
+     with other applications. SABSA, TOGAF, Zachman.
+     
