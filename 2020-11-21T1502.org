@@ -1,0 +1,39 @@
+* Secure software concepts 15: Least common mechanism and single point of failure
+
+** Least common mechanism
+
+Ensure that the system contains *sufficient isolation* and *redundancy* between components that the failure of any one component will not affect the operational capability of the system or multiple systems.
+
+- Network isolation.
+  -> Segmentation of Networks.
+  -> Gateways and barriers.
+
+- Power supplies.
+  -> Ensure redundancy of power supplies and backup systems.
+
+- Backplanes and racks.
+  -> Ensure that redundant equipment is not on the same backplane or in the same rack.
+
+- Vendor
+  -> A flaw in a vendor product could affect multiple systems.
+
+
+** Single points of failure
+
+- Personnel. Only one person 'knows' the system.
+- Equipment. Especially outdated or Manufacturer Discontinued (MED) equipment.
+- Networks. Choke-points or single points of failure on a network.
+- Supply chain. Breakdown in supply chain (data, materials, equipment, finance).
+
+** Key points reviewe
+
+- Least common mechanism could be considered the opposite of economy of mechanism that was reviewed earlier.
+  -> Be careful to design *isolation* into systems to prevent cascading failures.
+
+- Single points of failure are often *hidden* and the system design must be reviewed carefully to detect them.
+
+
+
+** Summary
+
+- Security must be 'woven' into the system and integrated into the operational process.

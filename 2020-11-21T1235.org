@@ -1,0 +1,53 @@
+* Secure software concepts 10: Defense in depth
+
+- Layered defense
+- Ensuring that a system is subject to no signle point of compromise
+
+1) Defend the local enclave
+2) Defend the enclave perimeter
+3) Defend networks and communications
+4) Defend the infrastructure
+
+** Application infrastructure
+
+-> Do not rely on *network security* to defend an application.
+-> Defend the device (the application is running on).
+   E.g. if application is secure but device is compromised it's bad.
+-> Use secure APIs.
+-> Deploy on secure infrastructure/architecture.
+   E.g. isolate web application from sensitive data not needed by it.
+-> Database security.
+   Application is often frontend that allows access to database.
+
+** Network security
+
+-> Encryption. Networks are target to monitoring.
+-> Firewalls. Firewalls on perimeter but also inside company network.
+-> IDS/IPS. Intrusion detection system, intrusion prevention system.
+-> Network segmentation. Security zones. E.g. server rooms.
+
+** Application defense
+
+-> Protect:
+   - Input.
+   - Processing.
+   - Error handling.
+   - Output.
+   - Display. Screen filter (person next to me cannot see what's on display).
+   - Storage.
+
+*** Input validation
+
+-> Range of value.
+-> Format of input.
+-> *Repeat at browser and server side.*
+-> Numeric.
+-> Completeness. That all required fields have been filled, and all credit card number digits are inputted.
+-> Error handling.
+
+
+** Key points
+
+- Layered defense is a critical part of the design of a system.
+  -> We have to seek out single points of failure and avoid them.
+  -> Defend at each point.

@@ -1,0 +1,35 @@
+* Secure software concepts 11: Fail safe
+
+- The ability of a system to fail in a way which does not compromise security and protects the assets of the organization.
+
+- Systems must be able to fail and still maintain the safety of personnel
+
+--> Manual and automatic overrides for control systems.
+    -> e.g. Ground faults - electrical controls
+    -> Fire exits
+
+** Exception handling
+
+- handling a transaction outside of the normal process flow
+  -> May be called error handling but and exception is not always an error
+  -> Errors are mistakes - user input
+  -> Exceptions are functionally abnormal operations
+     - Alarm condition.
+
+*** Error and exception handling requirements
+
+-> Ensure error is handled correctly by the application
+-> Logging
+-> Fail in a secure manner - not open (so that data security is not compromised)
+-> Ensure return to normal operating state
+-> Deny by default
+
+*** Non-verbose error handling
+
+- *Do not provide data to the attacker!*
+- Use error codes and *not line numbers*.
+
+
+** Key points
+
+- Exception handling ensures that assets will be protected even in the event of an error or failure.

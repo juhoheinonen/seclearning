@@ -1,0 +1,34 @@
+* Secure software concepts 14: Psychological acceptability
+
+- If the actions required of the subjects are not considered reasonable or tolerable, then the subjects will find a way to circumwent the requirements.
+
+- "More security is not always better security."
+
+- The core mission of an organization is to accomplish its goals and objectives:
+  -> Make a profit, deliver a service, accomplish a mission.
+  -> Security must never be in a position where it is seens as an unnecessary obstacle to success of organization.
+
+** Core concepts
+
+- Risk. Security is based on risk, risk must be identified. Identification of risks will justify the users why security controls are needed.
+- Apropriate controls. Controls should be focused on risk mitigation.
+- Awareness. Users should be aware of the risk and justification for controls.
+- Monitoring. Enforcement of controls is necessary.
+
+** Making security simple
+
+- Hidden controls. Make many controls less obvious and not visible to the users.
+- Simple. Not multiple frustrating steps to complete.
+- Biometrics and trust. Do not require invasive controls and protect biometric data - it cannot be replaced.
+- Universality. Managemenet must lead by example - not where management is seen as an exception to control requirements. E.g. wearing an id card, also bosses should use it.
+
+** Security traps
+
+- Passwords. Create a password that is impossible to remember but do not write it down. We need to make security simple and possible.
+- Screen layouts. Make a screen simple and logical to complete and reduce unnecessary steps.
+
+
+** Key points review
+
+- In a debate between operability and secuity, security will always lose.
+- Security must be integrated into business processes and be seen to be effective and justifiable.

@@ -1,0 +1,42 @@
+* Secure software concepts 13: Open design
+
+- Linus' law: "given a large enough beta tester and co-developer base, almost every problem will be characterized quickly and the fix obvious to someone."
+
+- Reality: even in open source, in reality, problems have slicked in.
+- If we use open source software, we should be part of the community reviewing it.
+
+** Peer review benefits
+
+- Have all code subject to peer review
+  -> Find flaws (logic) or bugs in code.
+  -> Ensure adherence to standards.
+  -> Mentoring and education of developers.
+
+** Peer review risks
+
+- Personality conflicts
+- Personal preferences
+- Experience of reviewerse
+- Time - project already late
+
+** Open design - cryptography
+
+- Trust. Can you trust the cryptographic algorithm and its implementation?
+  There shouldn't be a backdoor, so using open commonly known internationally reviewed algorithms.
+
+** Cryptographic Algorithm
+
+- Kerckhoff's law:
+  A cryptosystem should be secure even if everything about the systems, expect the key, is public knowledge.
+
+** Cryptographic guidelinse
+
+- Use peer-reviewed Algorithms. Do not create your own 'secret' algorithms. 
+
+- Protect the key (cryptovariable)
+  Ensure that the key is not visible or accessible in the code.
+
+** Key points
+
+- Peer review can be an effective tool to detect software vulnerabilities.
+- Use open design cryptographic algorithms to ensure trust and reliability.

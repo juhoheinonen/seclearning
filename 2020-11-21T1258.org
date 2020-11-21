@@ -1,0 +1,31 @@
+* Secure software concepts 11: Economy of mechanigs and leveraging existing components.
+
+- Based on the concept of not developing a function that can be provided by a already available mechanism/solutions
+  -> Use the same access control system for multiple systems
+     --> Federated identity management
+     --> Single Sign-On
+
+- Keeping the design of a system simple to reduce the attack surface and facilitate ease of use.
+
+
+** Leveraging existing components
+
+- Use existing investments in infrastructure
+  -> Common libraries
+  -> Common controls - firewalls etc.
+
+- Advantages
+  -> Capital expense. Use products already paid for.
+  -> Architectural standardization. Compatibility and interoperability. Save on training and maintenance.
+  -> Risk. Do not introduce new vulnerabilities through a new product.
+  -> Save time. Reduce time for systems development.
+
+- Risk
+  -> Common flaws or vulnerabilities. A flaw will affect multiple systems.
+  -> Vendor lock-in. Difficulty to move to an alternate vendor with a better product.
+  -> Inflexibility. Hard to make a change on behalf of one system without affecting the other systems relying on the same libraries or components.
+ 
+** Key points
+
+- Economy of mechanism encourages the use of solutions that are available for more than one system.
+- Leveraging existing components encourages the use of common libraries and controls that may be used by multiple applications or systems.

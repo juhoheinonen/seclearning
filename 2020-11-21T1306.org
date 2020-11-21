@@ -1,0 +1,84 @@
+* Secure software concepts 12: Complete mediation
+
+- Based on:
+  -> Every access request must be controlled in accord with policy.
+  -> Access permissions should be reviewed *at the time of access* not just based on earlier permissions.
+
+- Time of check vs Time of use (TOCTOU)
+  -> The vulnerability where:
+     - Access permissions are set at one poin time (e.g., lopgin) and then not checked again at time of use of the system.
+     - Asynchronous attack - can lead to session hijacking, or misuse.
+
+- Subjects and objects
+
+[[file:subjectsandobjects.png]]
+
+** Reference monitor
+
+[[file:referencemonitor.png]]
+
+** Reference monitor rules
+
+1) Mediate all access
+
+- Every access request should be reviewed for permissions.
+
+2) Protected from modification
+
+- A subject should not be able to change their own rights or privileges.
+
+3) Testable
+
+- The access control mechanism must be testable to ensure correct operation (economy of mechanism can help to achieve this).
+
+4) Always be invoked
+
+- Used for each access request.
+
+** Implementation of the reference monitor concept
+
+- Facilities/physical. Locks, security guards, ID cards, turnstiles.
+- Systems/applications. ACLs, passwords, role based access control (RBAC), tokens, access cards.
+- Databases. View-based access control, content dependent access control.
+
+** Complete mediation in applications
+
+- Can be controlled vai:
+  -> Passwords
+  -> Cookies
+  -> Certificates
+  -> Process-IDs. Which processes are allowed to access system.
+
+** Risk of caching credentials
+
+- User credentials may change between time of initial login and system use.
+- Stolen credentials may be used by an unauthorized individual.
+- Cached credentials may be used by multiple users.
+- A called process may execute at higher level of privilige than the initial user and return protected data to the user.
+
+** Session management
+
+- Timeouts for non-activity. Broken authentication and session management are number two web application vulnerabilities.
+- Lockouts after subsequent invalid login attempts.
+- Do not use predictable session IDs.
+- Do not allow reuse of previous session IDs.
+
+** Cookies
+
+- Session
+  Expire at the conclusion of a communications session.
+
+- Persistent
+  Expire after a set period of time.
+  May be used for tracking.
+
+** Cookie management principles
+
+- Do not store sensitive information in *unencrypted cookies*.
+- Man-in-the-middle attack.
+- Session hijacking/XSS/CSRF.
+
+** Key points
+
+- All access requests should be subject to review and approval.
+- Use of session identifiers must be protected from compromise.
