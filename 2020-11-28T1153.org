@@ -1,0 +1,57 @@
+* Secure software requirements 5: Identify privacy requirements
+
+** Privacy
+Protection of sensitive data
+- Data that could harm a person or organization if it was disclosed or modified improperly.
+
+** Secrecy
+- military
+- financial data
+- strategic data
+- trade secrets. E.g. secret family recipe.
+
+*** Trade secret
+Any valuable business information that is not generally known and is subject to reasonable efforts to preserve confidentially.
+- business plans
+- processes
+- formulas
+
+*** PII (personally identifiable information)
+- Identify a specific individual.
+- Non-sensitive - phone books.
+- Sensitive - could harm an individual if not encrypted.
+- PIFI - personally identifiable financial information - credit card number.
+- May be single piece of information or information when combined.
+
+*** Privacy Impact Assessment (PIA)
+Collected information is only used for intended purpose.
+Information is timely and accurate.
+Protected according to applicable laws and regulations.
+Impact of information on an individual is fully addressed.
+Public is aware of information collected and how it is used.
+
+*** Problems with PII
+Jurisdiction.
+Varying definitions.
+Aggregation. Combination of individual pieces of information, e.g. username and password.
+Inference. You can guess things from another things.
+Shared with third party.
+Perception and trust.
+
+*** PII in software
+Access controls.
+Encryption.
+Obfuscation/masking.
+Logging.
+View-based access control.
+
+*** Risks to PII in software.
+Multiple paths to information.
+SQL injection. Number one vulnerability in web software.
+Unauthorized changes. Person who should only be able to view data can change it.
+Improper changes.
+
+** Key points
+Sensitive data must be identified and protected.
+Legal definitions vary by judisdiction.
+All access to sensitive data should be logged and restricted based on business requirements.

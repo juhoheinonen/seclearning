@@ -1,0 +1,49 @@
+* Secure software requirements 6: Data protection
+
+** User consent
+The processing of personal data requires the consent of the user and it is necessary to conduct business.
+- Websites that gather data.
+- Business transactions.
+
+** Lack of consent (legitimate interests)
+
+It is permissible to pass data to another organization without user consent if it is necessary to conduct business.
+- Pass information to a debt collection agency.
+- Data shared must be accurate, up-to-date and *not excessive*.
+
+** Permitted processing of sensitive data
+Explicit consent - freely given.
+Information was made public by the individual.
+Conduct government business.
+Medical purposes. 
+Comply with employment law.
+Legal proceedings.
+
+** Anonymization
+
+*Turning data into a form which does not identify individuals* and where identification is not likely to take place.
+
+** Risk related to re-identification
+Ability to de-anonymize the data.
+- Small populations
+- Use partial data - blur details
+
+Anonymization techniques
+- data masking
+- pseudo-anonymization - consistent replacement
+- partial data
+- Aggregated data - totals. Be careful not to disclose sensitive information by combining data.
+- perturbation - adding '1' to certains cells in a table.
+- synthetic data - data made up of scrambled data elements - mix the records up.
+
+** Data protection during it asset disposition
+Sensitive data must be disposed of in a secure manner. e.g. old printers (they have memory).
+Hardware.
+Emails.
+Backups.
+Logs (ATMs with PIN in logs).
+Paper.
+
+** Key points
+Use and processing of sensitive data requires user consent and a legitimate business purpose.
+Data anonymization can prevent improper data disclosure.

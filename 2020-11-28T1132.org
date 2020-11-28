@@ -1,0 +1,38 @@
+* Secure software requirements 3: Interpret data classification requirements
+
+** Purpose of data classification
+Ensure that data is given the correct level of protection
+- throughout the data life cycle
+- mandate handling requirements
+  -> Labeling (sensitivity/impact, criticality)
+
+** Data life cycle
+- create/generate, share, store, archive, use, destroy
+
+** Protection of data in all forms
+- paper, electronic, memory, transmission, display
+
+** Ownerships
+- information owner: person who has responsibility for the information. May have legal responsibility. Must know what data we have.
+- System owner: is responsible that information system is protected correctly. Who has access to system? Often chief financial officer.
+- custodian: takes temporarily care of data, for example temporarily access customer's account data when giving support.
+
+- System owner: responsible for a system, such as sales system. Business vertical.
+- Information owner: role goes across organization, responsible that data is protected always and in all systems/departments. Horizontal role. Legal responsibility. Upper than system owner.
+
+** Identification/labeling of protected data
+- Prevent loss of intellectual property (IP).
+- Protect competitive data (proposals).
+- Legal compliance.
+
+** Protected data
+- sensitive data or systems.
+- critical data or systems.
+
+** Data types
+- structured data
+- unstructured data
+
+** Key points
+- Data protection requires ownership. Someone must be personally responsible for protection data.
+- Data must be protected in all forms and at all times.

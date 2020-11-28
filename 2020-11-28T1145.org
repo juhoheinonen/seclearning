@@ -1,0 +1,30 @@
+* Secure software requirements 4: Data retention
+
+- How long should data be preserved?
+-> legal requirements
+-> business requirements
+
+** Problems
+
+- Policy. How long we keep various types of data.
+- Readability. If we keep data electronically, will we be able to read it later 30 years later?
+- Encryption algorithms and keys. Those need to be stored also.
+- Age of storage media. 
+- Secure storage location.
+
+** Software retention
+
+- Applications.
+- Logs/reports.
+- Compilers.
+- Sharing. Data between systems and shared libraries.
+- Archival. Of old software.
+- Disposal.
+
+** Data Disposal
+Secure deletion of data
+
+- Hardware.
+- Backups.
+- Shredding. Paper.
+- Cloud. Data should be deleted when changing cloud provider. Must be protected by contracts.

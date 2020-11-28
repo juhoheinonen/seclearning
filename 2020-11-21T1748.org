@@ -1,4 +1,4 @@
-* Secure software requirements 2: Gatherind requirements
+* Secure software requirements 2: Gathering requirements
 
 ** Observation
 - Follow how clients people how are they are working.
@@ -35,7 +35,7 @@
 
 ** SDLC (software development life cycle)
 
-- Traditional software devel
+- Traditional software development
 
 - System/business owner
   -> Describes functional requirements
