@@ -1,0 +1,243 @@
+* Secure software requirements 7: Include security in software requirements
+
+** The objective of CSSLP must be to incorporate security principles into every phase of system lifecycle
+- Security must be aligned with business goals
+- must secure the application but not hinder its ability to operate
+
+** Challenge
+
+- Software development methodologies:
+  -> Heavily dependent on requirements
+  -> Inflexible to changing requirements
+  -> Impact on efficiency and effectiviness
+
+- Provide support for the development of a control framework to address business and IT risk.
+
+** Security requirements
+When
+Who
+What
+How
+Why
+Where
+
+Quantity
+- number of users
+- number of transactions
+
+Quality
+- accuracy
+
+Response time
+- processing
+
+** Standards
+- ISO27001
+- NIST
+- OWASP
+- BSIMM.
+- SafeCcode
+- OpenSAMM
+
+"Failure to gather requirements effectively and accurately will usually lead to problems later in the projects."
+"The first step is to understand the business then to define the solution."
+
+** Standards and best practices
+
+Benefits
+- Avoid missing critical threats
+- Completeness of data
+- Effectiviness of design. We can learn from mistakes and experience of others. Standard is like a pilot's checklist used before taking off with aeroplane.
+
+** ISO27001
+- based on bs 7799
+- evolved over time
+- information security management system - requirements
+
+- Key areas:
+  -> Context of the organization. Monopoly, military? What's the business mission.
+  -> Leadership. Accountability and responsibility.
+  -> Planning. 
+  -> Support.
+  -> Operation.
+  -> Performance evaluation.
+  -> Improvement.
+
+ISO27002
+- Supports implementation of ISO27001.
+- Security techniques - code of practice for information security controls
+- 14 major areas
+- over 130 controls. E.g. asset management, access control, cryptography, information security incident management, physical and environmental security.
+
+ISO27004
+- Monitoring
+
+ISO27005
+- Risk
+
+ISO27007
+- Audit
+
+ISO27008
+- PII in the public cloud
+
+Advantage of ISO compliance
+- Our security program can and is measured. 
+- Provide assurance to other stakeholders.
+  Gives owners and stakeholders confidence.
+  Customers and clients have more assurance to trust.
+  Management and employees. We are seeking excellence.
+  Regulators.
+
+"ISO 27001 is an excellent yardstick to use to measure the completeness of an information security program."
+"An organization may set ISO 27001 compliance as a mandatory requirement for all operations.
+
+** OpenSAMM
+
+Software assurance maturity model.
+Open framework to formulate and implement a strategy for software security.
+Tailored to the specific risks facing an organization.
+
+*** SAMM resources
+Evaluating an organization's existing software security practices
+Building a balanced software security program in well-defined iterations
+Demonstrating concrete improvements to a security assurance program
+
+*** SAMM principles
+- designed with flexibility in mind
+- provide tangible gains while incrementally working toward long-term goals
+- tailor choices according to risk and how the organization uses software
+- program should be well-defined and measureable
+
+1) Governance
+   - e.g. strategy and metrics
+     policy and compliance
+2) Construction
+   - e.g. security requirements
+3) Verification
+   - e.g. code review
+4) Deployment
+   - environment hardening
+
+*** Maturity levels
+
+- level zero, implicit starting point. The practice being unfulfilled.
+- level 1, initial understanding and ad hoc provision of security practice. Like a toddler's first try to walk.
+- level 2, increase efficiency and/or effectiveness of the security practice.
+- level 3, comprehensive mastery of the security practice at scale.
+
+"Maturity models are an excellent way to measure and report on the current state of a process, as well as to set
+a benchmark that can be used to show future improvements in a process and the maturing of the organization."
+
+** OWASP
+
+Open web application security project
+Lists top ten most critical web application security risks, normally once per three years
+
+*** Challenge
+Vulnerable software continues to be implemented with known vulnerabilities.
+- All systems should be tested to ensure compliance with OWASP.
+
+Injection, XSS, sensitive data exposure, insecure direct object references, security misconfiguration.
+
+- Provides programmes and quality assurance people with a comprehensive list of common problems that should be tested for.
+
+"Many vulnerabilities with software applications - especially web applications are well-known and documented."
+"With proper care a software developer can avoid making common errors in developing insecure code."
+
+** Building security in matury model
+The goal of the BSIMM is to create a measuring stick for software security
+- Not a how to guide
+- Reflection of the current state of software security
+  -> Can be used by an organization as a benchmark - are we following common practices in software security.
+
+Maturity models
+- Improving software security almost always means changing the way an organization works.
+
+Four main topic areas - domains
+- Governance
+- Intelligence
+- SSDL touchpoints (Secure software development lifecycle)
+- Deployment
+
+*** Governance
+- Strategy and metrics. What's our strategy for software development?
+- Compliance and policy.
+- Training.
+
+*** Intelligence
+- Attack models.
+- Security features and design.
+- Standards and requirements.
+
+*** SSDL touchpoints
+- Architecture analysis
+- Code review
+- Security testing
+
+*** Deployment
+- Penetration testing
+- Software environment
+- Configuration management and vulnerability management
+
+*** Identification of security gaps
+- Provide a measurement of areas an organization can, and should, improve on
+- Each security control should be examined for relevance to the host organization
+
+BSIMM is an excellent maturity models to provide several benefits:
+- Benchmark against common practice
+- Common language and definitions
+- Ability to monitor and measure progress
+
+** SAFECode
+
+Increasing trust in information and communication technology products and services through the advancement of effective software assurance methods (Tactical Threat Modeling).
+A not for profit group, giving the following resources:
+- Principles for software assurance assessment
+- Tactical threat modeling
+
+*** Software assurance
+Software assurance encompasses the development and implementation of methods and processes for ensuring that software functions as intended, 
+while mitigating the risks of vulnerabilities and malicious code that could bring harm to the end user.
+
+1) Software assurance is not achieved by a single practice, tool, or checklist; rather it is the result of a comprehensive secure software engineering process.
+2) The diversity of approaches used by organizations acquiring sofware and the unequal adoption of software assurance practices by IT development organizations has made
+it clear that we need a tiered approach for assessing the security of acquired software based on the maturity of the technology provider developing software.
+3) The current problems faced by many customers and suppliers require an immediate solution in the short term, and comprehensive, widely accepted international standards in the medium/long term.
+4) Customers may require evidence to support a supplier's claims.
+5) Customers need insight into the assurance process at both the corporate and product levels to support their risk management needs.
+
+SAFECode is a compilation of current practices being followed by many leading organizations.
+Provides a list of practices that an organization can measure itself against.
+
+** NIST and ISO
+
+NIST is part of US department of commerce
+Excellent free resources available at csrc.nist.gov
+- SP800-53 security controls.
+- SP800-34 contingency planning. Resiliency.
+- SP800-64 SDLC
+- SP800-160 systems security engineering
+
+The benefits of NIST
+- Risk management
+- Information and system categorization
+- Control selection and testing
+- Securing of technologies
+
+ISO = International organization for standardization
+- excellent international standards
+- ISO/IEC 31000 - risk.
+- ISO/IEC 27001 - ISMS.
+- ISO/IEC 15408 - Common criteria for benchmark for evaluate of security of an IT product.
+- ISO/IEC 27018 - PII in the cloud.
+
+*** Why use standards?
+- checklist of items to review
+- complete. A key component is not missed.
+- trustworthy.
+- auditable. Another party can verify that security is handled well.
+- authoritative.
+
+The software architect should review the resources available to ensure the design and development of secure code.
+Standards are often tailored to meet the specific needs of the organization and its operational environment.
