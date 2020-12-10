@@ -1,0 +1,57 @@
+* Secure software requirements 10: Threat modeling
+
+Threat and risk assessment (TRA)
+- Identify and prioritize threats according to impact (consequence) and likelihood (probability).
+
+Threat modeling should begin at the early stages of the project
+- Identify sensitivty and criticality of the system and the data it processes.
+- Identify threats associated with architecture and operational environment (web-based vs. secure facility).
+
+The challenge
+- State - the condition an entity is in at a point in time.
+- How to maintain secure state (compliance with policy) at all times.
+
+Threat sources
+-> Internal
+   - User error
+   - Curiosity
+   - Disgruntled employees
+   - Pressure to get the job done
+-> External
+   - Hackers
+   - APTS (advanced persistent threats)
+   - Criminals
+   - Environmental
+
+Changes in threats
+- Changes in business process
+- Changes in technology. Wireless, mobile phones.
+- New attackers.
+- *Changes to software functionality - new plug-ins or features*.
+
+Threat modeling techniques
+- Data flow diagrams.
+- Past incidents.
+- Architectural reviews.
+- Sequence diagrams.
+- Attack trees. Which things together have caused a successful attack.
+- Facilitated workshops.
+
+Identifying threats
+- List of assets. We should always have asset management.
+- List of threat sources.
+- List of attack vectors.
+
+Threat modeling in the SDLC
+- Security Strategy -> Architecture assessment -> Threat model -> Design Review -> Test Plan.
+
+CVE
+- Common vulnerabilities and exposures (CVE) is a dictionary of common names (CVE identifiers) for publicly known cybersecurity vulnerabilities.
+  Shares baseline information and allows identification of problems using tools that incorporate CVE Identifiers.
+
+CWE
+- Common weakness enumeration. A community developed list of common software security weaknesses. It serves as a common language, a measuring stick for software security tools, and
+  as a baseline for weakness identification, mitigation, and prevention efforts.
+
+"Systems should be designed to address and protect all known threats."
+"Threat modeling is the art of discovering information protection requirements."

@@ -1,0 +1,64 @@
+* Secure software requirements 8: PCI-DSS and PA-DSS
+
+PCI-DSS = Payment card industry - data security standards.
+PA-DSS = payment application - data security standards.
+PTS-DSS = PIN transaction services - data security standards.
+- HSM = hardware security module.
+Created by AMEX, JCB, VISA, and Mastercard.
+
+Importance of knowledge of the standards
+- Many errors are made by misunderstanding the requirements specified in these standards.
+- Failure to follow these standards may lead to increased financial liability in in a case of breach.
+  -> Or the loss of privilege to process payment card transactions.
+
+** PA-DSS requirements
+
+1. Do not store full track data, card certification code or value or PIN block data.
+2. Protect stored cardholder data.
+3. Provide secure authentication features.
+4. Log payment application activity.
+5. Develop secure payment applications.
+6. Protect wireless transmissions.
+7. Test payment applications to address vulnerabilities and maintain payment application updates.
+8. Facilitate secure network implementation.
+9. *Cardholder data must never be stored on a server connected to the Internet*.
+10. Facilitate secure remote access to payment application.
+11. Encrypt sensitive traffic over public networks.
+12. Secure all non-console administrative access.
+13. Maintain a PA-DSS Implementation Guide for customers, resellers and integrators.
+14. *Assign PA-DSS responsibilities for personnel*, and maintain training programs for personnel, customers, resellers and integrators.
+
+** PCI-DSS requirements
+
+Build and maintain a secure network and systems.
+1. Install and maintain a firewall configuration to protect cardholder data.
+2. Do not use vendor-supplied defaults for system passwords and other security parameters.
+
+Protect cardholder data
+3. Protect stored cardholder data.
+4. Encrypt transmission of cardholder data across open, public networks.
+
+Maintain a vulnerability management program
+5. Protect all systems agains malware and regularly update anti-virus software or programs
+6. Develop and maintain secure systems and applications.
+
+Implement strong access control measures
+7. Restrict access to cardhodler data by business need to know.
+8. Identify and authenticate access to system components.
+9. Restrict physical access to cardholder data.
+
+Regularly monitor and test networks.
+10. Track and monitor all access to network resources and cardholder data.
+11. Regularly test security systems and processes.
+
+Maintain an information security policy.
+12. Maintain a policy that addresses information security for all personnel.
+
+
+Value of knowledge
+- Many organizations make errors in software and business processes that could be avoided by knowing the standards such as PCI-DSS.
+- Knowing the requirements specified in the standards can avoid many security breaches.
+
+"All organizations should review their processes for handling sensitive data such as payment card data and ensure that they are compliant with the standards that are available."
+- This can limit liability.
+- Prevent reputational damage.

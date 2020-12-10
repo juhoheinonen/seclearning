@@ -1,0 +1,47 @@
+* Secure software requirements 9: Develop Misuse and Abuse Cases
+Include security requirements
+- Use cases. How software is intended to be used by normal users.
+- Misuse cases. Ping of death. ICMP = Internet Control Message Protocol. People misused ping to cause DoS. SMURF attack.
+- Abuse cases. 
+
+** Use cases
+How the system is intended to be used.
+- Normal functions and data flow.
+  -> Expected user errors.
+     - Fields left blank
+     - Wrong data in wrong field
+- Logging.
+- Audit support.
+- Reports.
+
+*** Error handling
+Proper handling - resolution.
+Loss of usual controls. E.g. normal separation of duties not used when fixing an error situation.
+Identification of problems.
+-> Repeated errors.
+
+** Misuse cases
+Systems used in a manner that was never intended.
+ICMP ping of death.
+Flooding (SMURF/FRAGGLE).
+
+*** Threat modeling
+Think like an attacker.
+Abuse or misuse of the system.
+
+STRIDE
+- Spoofing (spoof user identity)
+- Tampering (changing of data or permissions)
+- Repudiation
+- Information closure
+- Denial of service
+- Elevation of Privilege
+
+Identification of threats
+- The identification of threats is important to build in the Appropriate controls and countermeasures.
+
+"If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer
+a defeat. If you know neither the enemy nor yourself, you will succumb in every battle."
+
+"Normal requirements gathering focuses on the proper operation of the software and the ability to handle normal errors."
+"The art and science of discovering information protection requirements demands that the security architects also address the threats and intentional misuse of the software."
