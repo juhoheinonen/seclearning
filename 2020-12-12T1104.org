@@ -1,0 +1,28 @@
+* Secure software requirements 12: Develop security requirements traceability matrix (RTM)
+
+The Requirements Traceability Matrix (RTM) is a list of all requirements (often in a table or matrix) that can
+be used to track the status of the requirements.
+
+Requirements (functional and non-functional) may be buried in large documents (statement of work (SOW)) and may be addressed by multiple vendors on a large project.
+
+** Creating an RTM
+
+Track all requirements in one place.
+
+Show responsibility for addressing requirement.
+
+Show status of the requirement.
+
+Link to source document that listed the requirement.
+
+"Identified requirements should be addressed in design, development and implementation."
+"An RTM allows tracking that all requirements were addressed and met during the systems development lifecycle."
+
+"One of the most important steps in software development is the identification of all requirements."
+- Avoids re-work
+- Can help avoid project failure
+- Ensures needs of all stakeholders are addressed
+  -> User
+  -> Security
+  -> Management
+  -> Auditors

@@ -1,0 +1,163 @@
+* Secure software design 4: Threat modeling
+
+Threat modeling is an approach for analyzing the security of an application.
+It is a *structured* approach that enables the analyst to identify, quantify, 
+and address the security risks associated with an application.
+
+Threat modeling approaches
+- Software-centric
+  -> Software based attacks.
+- Security-centric
+  -> Known risks and vulnerabilities.
+- Asset-centric
+  -> Targets of value
+
+** Software-centric
+Logic flaws.
+Programming language choice and known weaknesses (type-safety).
+Software bugs.
+Attack surfaces (inputs).
+
+** Security-centric
+Known security issues.
+- OWASP top ten.
+- top 20 critical controls.
+Malware.
+Physical attacks.
+- Exposed software (kiosks)
+
+** Asset-centric
+Assets of value to an attacker.
+- Data
+  -> PII
+  -> PHII (health information)
+  -> Credit card
+Chained exploits. Use one attack to enable second attack.
+
+* Secure software design 5: Types of malware
+
+Virus
+- Self-replicating, modifies other programs.
+- Boot-sector
+- Macro
+- Polymorphic
+- Hoax
+- Stealth
+
+Worm
+- Standalone - do not require a host
+- Self-replicating
+
+Trojan horse
+- Not self-replicating
+- Looks legitimate
+- May do various types of extensive damage.
+- Often create backdoors.
+
+Botnets/bots
+- Based on 'robots'
+  -> Robotically controlled network
+- Infect machines
+- Usually are controlled over a network
+  -> Command and control servers (C2)
+
+* Secure software design 6: Threat sources
+
+Internal. An employee who takes a shortcut or disgruntled.
+External.
+Accidental.
+Intentional.
+Natural.
+Circumstantial.
+
+** Internal threats
+Accidental
+- Delete wrong File
+- Just 'trying to get the job done'
+- Ineffective security control
+- Curiosity
+Intentional
+- Disgruntled employee
+- Corporate espionage
+
+** Threat source evaluation
+Motivation.
+Skill.
+Persistence.
+- Advanced persistent threats (APTs)
+- Incompetent persistent threats
+
+"Examination of threats takes many forms
+- software-based
+- security-based
+- asset-based"
+
+The skills and motivation of the threat sources is important in understanding the 'real' threat.
+
+* Secure software design 7: Attack surface evaluation
+
+Attack surface evaluation
+- The sum total of all possible attack vectors that could be used to compromise a system or application.
+
+** Attack surfaces
+Networks.
+Inputs.
+Physical.
+
+** Attack vectors
+The approach used by an attacker to compromise a system
+- Extract data
+- Infiltrate the system
+- Disrupt operations
+
+** Defense in depth = layered Defense
+Not rely on a single control or defense mechanism.
+Avoid single points of
+- failure
+- compromise
+
+** Designing robust systems
+Systems that are resilient to attack or failure
+- redundancy
+  -> failover
+- error handling
+  -> fail secure (websites)
+Fault tolerant
+
+** Secure systems
+
+Many systems operate in high-risk environments
+- mobile applications
+- gas station pumps
+- wireless
+
+These systems must be secure in themselves, they cannot rely on the security of any other component.
+
+* Secure software design 8: Constrained user interfaces
+
+Limit input possibilities
+- ATMs
+
+Mask/obfuscate displayed/printed data
+
+View-based access controls
+
+Screen filters
+
+Keypad hiding
+- Software keypad
+
+** Third party suppliers
+
+Components may be provided by a third party - hardware, software, utilities
+- Certified secure?
+- Patching
+
+Risk of advertising on webpages
+- Compromise of third party
+
+Secure softwware requires knowledge of the potential attack surfaces
+- Every attack vector must be identified and protected
+- Third party products may introduce vulnerabilities
+
+"Design is often constrained by existing technologies and legacy systems, as well as cost, laws and culture.

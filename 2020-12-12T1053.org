@@ -1,0 +1,44 @@
+* Secure software requirements 11: Project risk
+
+** Identify project risk
+Project risk should be identified during the requirements definitions phase of the project
+- Avoid preventable project failures
+- Address vulnerabilities in project planning
+
+** Types of project risk
+Project risk may be a result of:
+- New technology.
+- Lack of skilled staff.
+- Lack of support from management/business units.
+- Changes in business process.
+- Merger/acquisitions.
+- New regulations.
+
+** Identification of project risk
+
+Project planning may avoid many project risks
+- Schedule
+- Budget
+- Scope
+
+** Project planning methodologies
+
+Critical path methodology (CPM).
+
+Program evaluation and review technique (PERT).
+
+GANTT charts.
+
+** Avoiding project failure
+
+Steering committee.
+
+Change control (scope creep).
+
+Resource pooling.
+
+Regular reporting.
+
+"Far too many IT projects fail."
+
+"Proper project management may avoid costly failures and disappointment."

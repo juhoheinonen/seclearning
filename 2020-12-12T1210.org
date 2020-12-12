@@ -1,0 +1,103 @@
+* Secury software design 1: Requirements allocation
+
+Access control is an example of external system.
+Input validation is an example of internal system.
+
+Each requirement in the requirements traceability matrix should be allocated to:
+- Internal, or
+- External systems
+
+Allocation to external systems
+- External systems are often "owned" by another department or job function.
+  -> Agreement from the external owner to "accept" responsibilty for the requirement.
+
+Benefits of external allocation
+- Leverage existing components
+- Save capital expenditure and time for delivery
+- Already proven technology
+
+Benefits of internal Allocation
+- Customized (tailored) solution.
+- Control.
+- Interoperability and integration.
+
+Challenges with allocations
+- Consistency - enterprise-wide solutions.
+- Scheduling with various vendors.
+- Interoperability - blame for problems.
+
+"Just defining and documenting requirements does not "fix" the problem."
+"The requirements must be addressed in the design."
+"External solutions should be considered whenever possible."
+
+* Secure software design 2: Modeling Security properties and constraints
+
+** Modeling security properties
+
+The objective of modeling is to design a solution based on risk and requirements that incorporates best practices in security.
+- Access control.
+  -> Least privilege.
+  -> Separation of duties.
+- Architecture
+  -> Network segmentation.
+
+The goal of modeling
+- Turn requirements into solutions.
+- Meet the *intent of the requirements* not just the specifications.
+
+Security solutions
+- Commensurate with risk.
+- Efficient and effective.
+
+Constraints to design flexibility
+- Legacy equipment and systems.
+  -> Interoperability
+
+- Regulations
+  -> Data storage and processing.
+
+- Cultural change
+  -> Preservation of the status quo. Change in a critical system can cause danges, e.g. air control software that changes.
+
+* Secure software design 3: Design considerations
+
+- Operational environment
+- Users
+  -> Internal vs. external
+- Other projects
+  How will our system integrate with other systems
+- Centralized or decentralized
+- Cost
+- Availability of technology and staff
+
+More design considerations
+
+- Data and system criticality.
+- Data and system sensitivity.
+- Future needs and growth.
+- Time limits.
+- Audit and logging.
+
+Operational environment
+- Physical security
+- Networks
+- Operating systems
+- Utilities
+- Databases
+- Mobile
+- Wireless
+
+Access controls
+- Different access level for users
+- Privileged accounts
+  -> Administrators
+  -> Super user
+- Audit access
+
+"Design a solution to meet user needs"
+- Security
+- Operational capability
+- Audit
+- Complete solution with no security or operational gaps
+
+
