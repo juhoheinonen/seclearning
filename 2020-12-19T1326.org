@@ -1,0 +1,168 @@
+* Secure software design 9: Security architeture
+
+Implementation of controls to protect the operation of a system or business process and maintain confidentiality, integrity, and availability.
+
+Proactive vs. reactive
+
+Types of controls
+- Managerial or amdministrative
+- Technical / logical
+- Physical / environmental (operational)
+
+Usually all three types are needed.
+
+All three are necessary to provide an effective security solution.
+
+** Security controls
+
+Directive. You must not do something.
+Deterrent. "Beware dog"
+Preventive. Block actually attempts.
+Detective. A smoke detector.
+Corrective. Smoke detector detects the fire and starts fire extinguisher.
+Restoration/recovery.
+
+** Compensating controls
+
+Additional controls to compensate for or address a weakness or lack of other controls.
+- Administrator rights on a system
+
+* Secure software design 10: Meeting requirements
+
+The requirements specified and documented need to be addressed/resolved using controls
+- Least privilege
+- Separation of duties
+  -> Dual control
+  -> Mutex (mutual exclusivity). Another person must confirm transactions and cannot confirm his/her own transactions..
+- Auditability and accountability.
+
+Enterpise security architeture
+- Design and implement a consistent security solution across the enterprise-wide
+  -> Consistency
+  -> Interoperability.
+     Leverage of existing components.
+  -> Training and support
+
+** Adequate security
+
+Security that is commensurate with risk.
+Effective.
+Cost-effective.
+Justifiable.
+Aligned with business needs.
+
+** The "BEST" security controls
+Based on
+- laws
+- budget
+- other projects
+- operational environment
+- available technologies
+
+* Secure software design 11: Architecture methodologies
+
+** Zachman and TOGAF
+Start at the business context.
+- Develop increasing levels of detail
+- Traceability
+Better alignment of IT with business mission
+
+** Sherwood applied business security architecture (SABSA)
+Better alignment between business and security
+Enterprise security architecture (ESA)
+- Consistent application of security solution between branches of an enterprise
+
+** Data flow diagrams
+Logical flow of data through a system
+- Assist in program design
+- Identify process operations and exceptions
+- Do not show the sequence of different processes well
+
+** Sequence diagrams
+Show the sequence of processes and activities
+- Message passing between processes
+- Visualize runtime scenarios
+
+** Architecture challenges
+Technology.
+Current business practices.
+Time.
+Cost.
+Functionality vs aesthetics.
+Ability to scale.
+
+The failure of many projects starts in the first two phases - requirements and design.
+The goal is *enterprise solutions*.
+
+* Secure software design 12: Systems development methodologies
+
+SDLC
+
+- Waterfall
+- Prototyping
+- Spiral
+- Extreme
+- Agile
+- DevOps
+
+** Challenges with all methodologies
+
+Requirements change.
+Too long to see results.
+Documentation.
+Budget.
+Skilled staff.
+Management commitment.
+
+* Secure software design 13: Enterprise-wide architecture
+
+The objective of architecture is to design a solution that meets current and future business needs.
+- Forecasting
+- Understanding the business
+- Leveraging technology to augment business
+
+Goals of architecture
+- Interoperability
+- Ease of use
+- Flexibility
+- Reliability
+
+** Architecture perspective
+
+Start with business before designing a solution.
+- Understand the problem the business is trying to solve.
+- Separate the solution from problem.
+- Develop a solution based on the business model.
+
+* Secure software design 14: Architectural models
+
+The question remains, "What is the best kind of house to live in?"
+- Tent
+- Apartment
+- Palace
+
+It depends.
+
+The best solution depends on many factors.
+
+** Centralized computing
+
+One point of control
+One point of failure
+Consistency
+Inflexibility
+
+** Decentralized computing
+
+Pros
+- Flexible to local business needs
+
+Consistent
+- Inconsistency in processes and security
+- Shadow IT
+
+** Decentralized security risk
+
+- Legal compliance
+- Monitoring
+- Log deletion

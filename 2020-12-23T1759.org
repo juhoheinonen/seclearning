@@ -1,0 +1,57 @@
+* Secure software design 31: State
+
+The condition of an entity is in at a point in time
+
+State can change
+
+Secure State
+- policy
+- preservation of state
+
+** Protocol choices
+
+Some protocols are more secure than others:
+- Resistant to manipulation of data
+- Use of encryption to protect data
+
+Authentication of entities
+
+** Protocol
+
+An agreed-on format for communication
+
+Like a languages
+
+Various protocols for various purposes i.e. TCP vs UDP
+- RTP - real-time transport protocol (streaming media)
+  -> Packet loss concealment, jitter
+
+
+** Examples of weak protocols
+
+SSL
+
+TLS v1.1
+
+POP 3
+
+MD5
+
+SHA1
+
+SNMP v1 and v2
+
+"Use of these protocols should be prohibited by standards and practice."
+
+** Application program interfaces (APIs)
+
+Software building blocks (routines, protocols, tools) used as interfaces (e.g. middleware) between various software components (e.g. embed a map feature into a website).
+
+** Challenge of APIs
+
+Risks are:
+- False APIs
+- APIs using older code/encryption
+  -> False certificates
+- Changes to functionality
+- Insecure endpoints

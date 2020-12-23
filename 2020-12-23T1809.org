@@ -1,0 +1,49 @@
+* Secure software design 32: Models
+
+** Security Models
+
+Define the theory of access controls and systems security
+- The concepts of the models are integrated into implementation
+
+** Bell-LaPadula
+
+State machine model - preserved state
+
+Focus on confidentiality
+
+Information flow model
+
+Lattice based access protocol (level-based)
+
+[[./belllapadula.png]]
+
+Sometimes is used Strong * - start security condition: you can only read and write to your own security level.
+
+** BIBA integrity model
+
+Addresses first goal of integrity:
+- Unauthorized users cannot make modifications.
+
+Establishes the subject-object relationship (called a tuple)
+
+Introduced the invocation property - a user cannot execute a function of a higher privilege level
+
+[[./biba.png]]
+
+** Clark-Wilson model
+
+User who wants to make a change must use program to do the change.
+
+Access triple: subject-program-object.
+
+** Other models
+
+Take-grant
+
+Lipner (implementation)
+
+Sutherland
+
+Boebert and Kain
+
+"The security models describe the mathematical concepts of security that are built into the design of applications, operating systems and other IT components."

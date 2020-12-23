@@ -1,0 +1,258 @@
+* Secure software design 16: Web-based architecture risk
+
+** Rich internet applications (RIA)
+
+Provide desktop-like services through a web application
+- User interface on client side
+- Data manipulation on server side
+
+Runs inside a web application
+- Sandbox
+- Some processing done at the client side rather than at server side as with thin client.
+
+Sandbox
+- Isolation
+- Control
+- Virtualization
+- Restrictions
+
+Client side risk
+- Anything done at the client side can be manipulated by the client
+  -> Validation routines
+  -> Client-side proxy
+
+Error handling
+
+Execution on an untrusted device
+
+** Remote code Execution
+The ability of an attacker to remotely access and take control of a victim's machine (aka arbitrary code execution)
+- Often run at same privilege level as user - attacker may attempt to increase privilege level.
+
+
+Always-on connectivity
+- Since many devices are always connected to the internet it makes them valuable as part of a botnet or other malicious activity.
+
+* Secure software design 17: Pervasive computing
+
+Aka ubiquitous computing - "everyware"
+
+The use of computing technologies on all types of devices (home furnishings, cars, glasses)
+
+The emergence of the Internet of things (iot)
+
+** SCADA and ICS
+
+Supervisory control and data acquisition systems
+- smart highways
+
+Industrial control systems
+- Building management systems
+
+Risks
+- Patching
+- Vulnerabilities (Stuxnet)
+
+* Secure software design 18: IoT risks
+
+Lack of separation between network and functional components
+- Medical devices (restart)
+- Vehicles (cars, airplanes)
+
+Wireless risks
+- Wireless communications may be intercepted and modified
+  -> Confidentiality and integirty
+- May provide remote access/administration
+
+The attack surface
+- The larger the attack surface, the more likely to find an entryway for an attack.
+  -> Wireless
+  -> Middleware
+  -> Apis
+  -> Utilities
+  -> Remote sensors
+  -> Networked devices
+
+"New architectural approaches are developed but each has its own vulnerabilities."
+"The designer must be aware of which vulnerabilities are associated with each architectural approach."
+
+* Secure software design 19: Feature-based risks
+
+Very often the addition of extra features to an application or service has resulted in new compromises or breaches
+Risk of:
+- system compromise
+- data disclosure
+
+Location-based services
+- Provide users of application with a more effective interface
+  -> Local attractions, etc.
+  -> Coupons and marketing.
+  -> Track employees and company-owned vehicles
+
+Disclose data on user location and habits
+
+** Radio frequency identifiers (RFID)
+
+Track products, devices and people.
+Store entity-related data.
+Ease of use - installation and removal.
+Avoid loss of or interchange of cards.
+
+* Secure software design 20: Near field communications (NFC)
+
+Wireless, contactless communications between devices in close proximity to one another
+- Exchange of files
+- Payment systems
+
+Risk - theft of payment data, unknown copying of data from a device
+
+Embedded systems
+- Computing process built into a product (such as an automobile)
+  -> Usually performs a set function
+  -> Real-time computing (changing road conditions)
+- Risk - difficult to patch, long lifespan, remote access
+
+Firmware
+- Embedded onto ROM or flash
+  -> May be infected during the manufacturing process.
+  -> Need assurance of reputable vendors
+
+** Hardware platform concerns
+
+HSM (hardware security modules)
+Secure build
+Trusted platform modules
+
+* Secure software design 21: Trusted components
+
+Common criteria
+- Target of evaluation (TOE)
+- Protection profile
+- Security target
+- Security functional requirements
+- Evaluated assurance level
+
+"Wireless communications remain a 'soft' target for many attacks."
+
+* Secure software design 22: Moving to the cloud
+
+Many organizations have adopted a "cloud-first" strategy
+
+But there is no 'one' cloude - there are different implementations, each with own security challenges.
+
+Essential characteristics of the cloud
+- On-demand self-service
+- Broad network access
+- Resource pooling
+- Rapid elasticity
+- Measured service (you pay for what you use)
+
+* Secure software design 23: Cloud implementations
+
+Software as a service.
+Platform as a service.
+Infrastructure as a service.
+
+** Cloud implementations
+
+Public cloud. Also other companies use it.
+Private cloud. Nobody else is using it.
+Community cloud. A shared cloud computing service environment that is targeted to a limited set of organizations or employees (such as banks or universities).
+Hybric cloud. Partially public cloud, partially private cloud. May also belong to a community cloud.
+
+* Secure software design 24: Reasons to migrate to the cloud
+
+Move from capital expenditure to operational expenditure. In capital expenditure I have to pay for everything beforehand, buy equipment, hardware, configure.
+In operational expenditure the cloud provider has the capital expense. I only pay for monthly operational cost.
+
+Availability of skilled staff.
+
+Time to delivery.
+
+Scalability.
+
+Virtualization.
+
+Reduced risk. Cloud services provider takes care of big part of security?
+
+* Secure software design 25: Cloud-based advantages
+
+Everyone works from same software
+
+Patch management
+
+Efficiency
+
+Environmental footprint
+
+Centralized administration
+
+Cheaper end-point equipment
+
+** Cloud-based risk
+
+Cloude provider failure
+
+Cross-border data laws
+
+*Loss of direct control over data*
+
+Encryption keys
+
+Retired equipment
+
+Leaving the cloud
+
+"Each cloud solution has unique security concerns."
+"Security requirements must be included in contracts and service level agreements."
+
+* Secure software design 26: Mobile applications
+
+** The risk
+
+The risk associated with mobile apps starts with the platform itself - as software designers we often have no control over the security of the device
+
+OWASP mobile top 10 
+- Misuse of: touchId, permissions, keychain.
+- Insecure data storage and leakage.
+- Poor handshaking, incorrect SSL versions, Cleartext.
+- Failure to identify the user, weak session management.
+- Poor implementation of cryptography.
+- Authorization decisions in client side.
+- Buffer overflows, format string vulnerabilities.
+- Binary patching, memory modification.
+- Analysis of core binary.
+- Hidden backdoors, internal security controls.
+
+Active content refers to electronic documents that can carry out or trigger actions automatically without an individual directly or knowingly invoking the actions.
+Often found in:
+- pdf documents
+- Java applets
+- ActiveX controls
+- Word processor files containing macros
+- Flash and Shockwave media files
+
+** Mobile vulnerabilities and risks
+Untrusted software
+
+Remote Execution
+
+Unstructured and unverified content
+
+** Mobile risk safeguards
+Policies
+Evaluated technology
+Security audit
+Version control and patch management
+Isolation
+Minimum functionality
+
+** Technical controls
+
+Filters (firewall)
+Sandboxing
+Signatures of trusted source
+Proofs of code properties
+
+"Mobile code makes the internet much more useable for everyone."
+"Risks must be identified and mitigated."

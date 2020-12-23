@@ -1,0 +1,104 @@
+* Secure software design 15: Client server
+
+Often a two tiered architecture
+Central data storage
+Dependent on network connection
+E.g. web services, email
+
+** P2P architecture
+
+Robust, multi-point services
+Each computer may operate as a client and as a server - all nodes may be peers
+Data replication - consistency
+Greater risk of remote access vulnerabilities
+
+** Message queuing
+
+Often async message passing between systems. One system can place a message into a queue for later retrieval by another system.
+
+May also be synchronous to allow live updates of a web page, for example.
+
+** Service oriented architecture (SOA)
+
+Loose coupling of services available on demand
+
+Provides interface for utilizing existing services (a highway for service functions)
+
+Integration of separately deployed and maintained software components
+
+Risk - interoperability, security of protocols
+
+** Web services
+
+UDDI (universal description, discovery and integration) - directory of services available
+
+XML - format of data and metadata
+
+SOAP (simple object access protocol) - mechanism to transport data
+
+WSDL (web service definition language) - services available
+
+ESB (enterprise service bus) - communication path between applications
+
+REST (representational state transfer) - interoperability between web components
+
+* Secure software design 16: The waterfall
+
+Linear-sequential activities
+
+Non-iterative
+
+Fixed objectives
+
+Traditional
+
+** Problems
+
+*Lack of used involvement in many phases*
+
+Inflexible to mid-stream changes
+
+** Four steps in the spiral cycle
+
+Success-criteria for all stakeholders
+
+Identify alternate approaches
+
+Identify and resolve risks
+
+Obtain approval and commitment for the next phase
+
+** Agile development
+
+Based on the earlier process of Rapid application development (RAD)
+
+Often implemented as as series of scrums
+
+- Flexible to changing requirements
+- Focus on delivery of individual pieces not an entire solution
+- time-based (30 day sprints)
+- team-based approach
+
+** DevOps
+
+Blending of development and operational teams
+
+Aligns development, QA, and operations for better communications
+
+Develop and releases operational code-conversion-map-vector
+
+Release code faster
+
+Continuous development, integration and operations
+
+** Challenges for security
+
+Integrate security into each step.
+
+Identify risk and security requirements in a changing world.
+
+Lack of documentation and tough to support.
+
+Lack of separation between development and operations.
+
+"Regardless of the SDLC methodology used the CSSLP must seek to integrate security into each phase in process."

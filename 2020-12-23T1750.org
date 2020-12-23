@@ -1,0 +1,34 @@
+* Secure software design 30: Out of band
+
+A network that is subject to monitoring may require the use of 'out of band' communications for sensitive data.
+- Prevent traffic analysis
+- Ensure integrity and confidentiality of communications
+
+** Out of band
+
+Alternate channel
+
+Manual process
+
+Encryption keys
+
+Negotiations
+
+** Encryption key exchange-dot-and-mark
+
+Diffie-Hellman key negotiation
+
+RSA and ECC certificates
+
+** IPSec: internet protocol security
+
+Uses security associations to establish secure communications
+
+** Consistency of data format
+
+Data from different systems may be in different formats
+- Conversion to common language/encoding. Xml is important because it defines the format.
+- Error codes
+- File layouts
+- Field definitions
+

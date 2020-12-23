@@ -1,0 +1,46 @@
+* Secure software design 28: Performing secure interface design
+
+** Interfaces
+
+Old approach - only interface when 'pressing business needs'
+
+Today - link everything
+
+** Challenge
+
+Networking enables collaboration and sharing, but it also raises the risk:
+- Interception and manipulation of data
+  -> Exposure of sensitive information
+- Loss of availability of critical data
+- Sharing/spreading of malware
+
+** Chained exploits
+
+Attacking, or being attacked via other networked systems.
+
+Trusted path:
+- security and management interfaces used to monitor and perform administrative functions.
+- access must be designed into the solution.
+  -> Inspection ports
+
+** Protocols
+
+Secure remote access.
+
+Protection from unauthorized access or changes to configuration.
+
+** Log Management
+
+Log critical events
+- Legal compliance
+- Management
+  -> Who, what, when
+
+** Protection of logs
+
+Logs may contain sensitive information. E.g. in ATM log there may be pin numbers accidentally typed in.
+
+Integrity may be required for legal issues and investigations.
+- WORM, hash totals, encryption
+
+*Non-verbose error messages*. Rather code than textual description of the error.

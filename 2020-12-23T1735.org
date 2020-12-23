@@ -1,0 +1,81 @@
+* Secure software design 29: Upstream and downstream dependencies
+
+** Interfaces
+
+May occur at many levels
+- Network
+- Utilities
+- Middleware
+- Sub-processes
+- Users
+
+** Upstream liabilities (we receive input)
+
+Invalid input
+
+Duplicated data
+
+Incomplete data
+
+** Solutions
+
+Input validation
+- Allowable values
+- Range of values
+- Completeness of input
+
+Integrity
+- Hash totals
+- Sequence numbers
+
+Confidentiality
+- Encryption
+- Anonymization
+
+Secure access control
+- Remote access
+
+** Downstream liability (we input something)
+
+Infecting other systems
+- Designed intentional data sharing
+- Unauthorized data sharing
+  -> Digital rights management (DRM)
+
+** Interface connectivity
+
+Bluetooth
+
+RFID
+
+Near-field communications (NFC)
+
+802.11
+
+** Interface communications risks
+
+Loss of connectivity
+
+Unauthorized access
+
+Accuracy of data - noise
+
+Jamming
+
+** Managing a network channel
+
+Procedures for approval for establishing the connection
+
+Process to monitor channel and report on any problems
+
+Defined process for disconnecting
+- *Do not leave half open connection*
+
+** Encryption
+
+Provides benefits of:
+- Access control
+- Authentication
+- Confidentiality
+- Integrity
+- Proof of origin (non-repudiation)
