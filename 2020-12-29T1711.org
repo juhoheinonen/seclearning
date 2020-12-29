@@ -1,0 +1,61 @@
+* Secure software design 43: Encryption
+
+Converting a message into a format that cannot be understood by unauthorized parties
+
+Converts plaintext messages into ciphertext using an algorithm
+
+** Benefits
+
+Protects confidentiality of the message
+
+Protects the integrity of the message
+
+Proves authentication of the sender and receiver
+
+Provides non-repudiation
+
+Supports access control
+
+** Uses of Encryption
+
+Protects data in transit
+
+Protects stored data
+
+** Terminology
+
+Plaintext or cleartext
+
+Algorithm and the cryptosystem
+
+Ciphertext or cryptogram
+
+Symmetric algorithms. Same key in encryption and decryption. AES, DES, RC5.
+
+Asymmetric algorithms. Key pair.
+
+Key or cryptovariable.
+
+** The secret to successsful use of Encryption
+
+Protect the secret keys
+- Use keys of a suitable length
+- Do not lose the keys
+- Change keys regularly
+
+Use strong algorithms
+
+Train staff in correct use of encryption
+
+** Symmetric algorithms
+
+Same key both to encrypt and decrypt the data
+- Key cannot be sent together with the encrypted data - requires out of band transmission.
+
+Excellent for confidentiality.
+
+Rapid operations.
+
+[[./symmetric.png]]
+
+

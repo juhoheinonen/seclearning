@@ -1,0 +1,66 @@
+* Secure software design 46: Databases
+
+Some of the most valuable assets an organization has may be contained in databases.
+
+Like an electronic filing cabinet:
+- may be accessed from anywhere
+- reduces duplication
+- reduces errors
+- shares data between multiple users and applications
+
+** Types
+
+Hierarchical.
+
+No SQL.
+
+Relational.
+
+** Anderson's law
+
+A large database will never be free of abuse by breaches of security.
+
+If a large system is designed for ease of access it becomse insecure; if watertight it becomes
+impossible to use.
+
+** Database risks
+
+Unauthorized or improper access and use
+
+Malware infections
+
+Overloads and performance constraints
+
+Physical damage
+
+Privilege escalation
+
+Data corruption
+
+** Database security controls
+
+Access control
+
+Auditing. Journaling/remote journaling.
+
+Encryption.
+
+Integrity controls.
+
+Backups.
+
+Application security. The application accessing the database must be properly protected.
+
+** Application-related database controls
+
+View-based access controls. Use views to restrict the data from database that is displayed to the user.
+
+Content-dependent access controls. E.g. content of a field tells that the user cannot access some record.
+
+Least privilege.
+
+** Database trigger
+
+A procedure that executes when a defined condition is met used to enforce database rules and enforce integrity.
+
+

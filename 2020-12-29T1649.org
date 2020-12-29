@@ -1,0 +1,49 @@
+* Secure software design 39: Evaluate and select resuable secure design
+
+Many security solutions are already available for use by the systems and security architects
+- proven technology, prevent introducing new errors
+- more supportive of audit
+
+** Concepts of system security
+
+Build security into every component of the system
+- Operating systems
+- Utilities and drivers. From reputable sources.
+- Networks.
+- Databases.
+- Middleware.
+- Applications.
+- End-points and interfaces.
+
+* Secure software design 40: Operating system security
+
+Isolation between security kernel and other less important functions.
+- Ring protection model. Usually 4 rings.
+
+Patching.
+
+Choice of operating system
+- Reliability
+- Open source or proprietary
+
+Utilities
+- Restrictions on access to privileged utilities
+- Patching
+- Use of *trusted products*
+  -> Fake drivers, utilities and processes
+  -> Signed code
+
+Network security
+- Architectural design:
+  -> Isolation
+     VLANs
+     DMZ
+     Extranet
+
+Layered network defense
+- Avoid single points of failure or compromise
+  -> Proxies
+  -> Firewalls
+     Different types
+  -> IDS/IPS
+  -> Redundancy

@@ -1,0 +1,62 @@
+* Secure software design 35: Outside vendors
+
+The challenge of integrating many components from various outside vendors can be daunting.
+- Interoperability
+- On-time delivery
+- Design flaws/change control
+
+Networks
+- Firewalls
+- IDS/IPS
+- Gateways
+- Wireless
+- Demilitarized zone (DMZ). A semi-trusted network.
+- Extranet
+
+* Secure software design 36: Power and environmental controls
+
+UPS - uninterruptible power supply
+- Batteries
+- Generators
+
+Surge protectors.
+
+Heating, ventilation and air conditioning.
+- Humidity and temperature
+
+Rack space
+
+Physical access controls
+
+** storage
+
+Direct attached storage
+- backups and version control
+
+Network attached storage
+- network access
+
+Storage area networks
+
+** end-point devices
+
+Custom devices
+
+Software-only (apps)
+
+Security of end-point devices
+
+Compromised devices
+
+Encryption
+
+** Where is the processing done?
+
+Client side validation
+- Anything can be manipulated by the client on client side
+
+Server side validation
+
+"The integration of monay components into a single deliverable presents a challenge to many designers."
+
+"The architect needs to ensure that the risk associated with each compoent has been identified and addressed."

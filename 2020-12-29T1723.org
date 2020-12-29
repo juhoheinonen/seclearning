@@ -1,0 +1,24 @@
+* Secure software design 44: Asymmetric algorithms (public key)
+
+Operates using a pair of keys
+- One half of the key pair is the private key and must be kept secret by the owner of the key pair
+- The other half of the key pair is the public key and it can be shared with anyone
+
+The keys are mathematically related and must always be used as a pair.
+
+[[./asymmetric.png]]
+
+[[./asymmetric_integrity.png]]
+
+** Benefits
+
+Can be used to distribute symmetric keys confidentially. Asymmetric algorithms are very slow.
+- IPSec (Diffie-Hellman)
+- TLS (RSA)
+
+Can authenticate each party to the transaction
+- Certificates
+
+Used in digital signatures
+
+[[./hybrid.png]]

@@ -1,0 +1,77 @@
+* Secure software design 37: Secure design principles
+
+The organization should try to have a mature, enterprise-wide design process.
+- Consistency.
+- Continuous improvement.
+
+** Benefits of secure design
+
+Control effectiveness
+
+Reduced costs for controls
+
+Better alignment with business and security needs
+
+Preparation and planning leads to fewer errors or rework
+
+** Control selection
+
+The selection is influenced by:
+- Sensitivity of data
+- Criticality of data
+- Sensitivity of system
+- Criticality of system
+
+** Tailoring controls
+
+Controls may be based on standards and templates (NIST, PCI_DSS, COBIT)
+
+Controls may be tailored to address unique requirements for each system
+
+** Design principles and patterns
+
+Documentation
+- Consistent format
+  -> Easier to maintain
+  -> Easier to reference and read
+  -> Sharing with other integrated systems
+
+Documentation should be a "living" document:
+- Up-to-date
+  -> As-built rather to as-designed (though at this point we are are just in design)
+- Version control
+- Readily accessible
+
+* Secure software design 38: Design principles
+
+Separation of duties:
+- Dual control. For sensitive actions e.g.
+- Mutual exclusivity.
+- Approval and authorization process.
+
+** Coding standards
+
+Language. What language we are using?
+
+Avoidance of weak procedures. E.g. goto.
+
+Commonly used modules.
+
+Readability.
+
+Documentation.
+
+** Project management
+
+Poor project management leads to many project failures
+- Scheduling
+  -> Integration between teams/vendors
+     Design should address bottlenecks
+- Effective use of resources
+  -> Concurrent activities (already planning testing)
+- Budget
+- Change control
+
+"Good practices include designing solutions that will reduce project problems and leverage known solutions."
+
+

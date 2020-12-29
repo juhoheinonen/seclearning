@@ -1,0 +1,37 @@
+* Secure software design 33: Performing architectural risk assessment
+
+As the system is being designed, risk that was not visible at a high level before may be noticed.
+
+Attention should be given to emerging threats associated with the architectural model selected.
+
+** External risk areas to consider
+
+Some of the external risk areas to consider:
+- the operational environment
+- the user community
+  -> Impact on business operations
+  -> Training requirements
+- Integration with legacy systems
+- Legal and regulatory constraints
+  -> Location of data and processing
+
+** Internal risk areas to consider
+
+Some of the internal risk areas to consider:
+- Single points of failure
+- Attack surface
+- Complexity
+
+** Review risk associated with chosen solution
+- Centralized systems
+- Distributed computing
+- Networking
+  -> Wireless Networking
+- Storage
+- Disaster recovery
+
+The security requirements traceability matrix should be reviewed to ensure that all
+identified threats and requirements have been met.
+
+"The software architect should review the proposed design of the system to ensure
+that all risks have been identified and handled appropriately."

@@ -1,0 +1,73 @@
+* Secure software design 45: Integrity
+
+Proves a message has not been altered accidentally or intentionally
+- Noise
+- Man-in-the-middle
+- Either party to a transaction
+
+** Message Integrity
+
+Hash
+
+Parity bits
+
+Checksums
+
+Cyclic redundancy checks (CRC)
+
+Message authentication codes (MACs)
+
+** Hashing
+
+A digest or hash is calculated on the entire message.
+
+The digest is an accurate representation of the message and any change in the message would change the digest.
+
+If the sender of the message and the receiver of the message both get the same hash or digest value - then the message was not changed.
+
+** Problems with Hashing
+
+An intruder can alter both the message and the digest.
+
+Either party could change the message and claim it is still the original.
+
+No way to prove the message went to or came from the correct person.
+
+** The solution
+
+Digital signatures
+
+Prove message integrity and non-repudiation
+
+Created by signing the digest with the private key of the sender
+
+[[./digital_signature.png]]
+
+** Digital signatures
+
+When combined with the use of certificates, they provide non-repudiation and message integrity
+
+** Certificates
+
+Link a public key to its owner
+
+Issued by a certificate authority (CA)
+- Role of the Registration Authority
+
+Types of certificates
+
+Lifetime of certificates
+
+** PKI - public key infrastructure
+
+Deployment of asymmetric key cryptography in a usable modeling
+Uses certificates to validate parties
+Certificate Revocation Lists (CRLs) used to identify certificates that can no longer be trusted.
+
+Digital signature - hash of a message encrypted using Sender's private key. The receiver uses Sender's
+public key to decrypt the digital signature. The receiver also uses same hashing algorithm to
+hash the received message and checks if the value of that digest is same value as the digest
+that we got from digital signature.
+
+Digital signatures provide both proof of origin of the message and message integrity. This supports
+non-repudiation of the sender and authenticity of the message and the sender.

@@ -1,0 +1,27 @@
+* Secure software design 34: Performing secure assembly architecture for component-based systems
+
+Examples of components:
+- Databases
+- Documents
+- User interfaces
+- Mobile applications
+
+Other design elements
+- Menus
+- Verification
+- Trust
+- Operating system
+- Auditable
+- Permissions. We don't grant access that goes beyond what is needed.
+
+Tiered architectures
+- 2-tiered architecture
+- 3-tiered architecture
+- middleware
+
+Virtual machines
+
+- Type-I: bare-metal
+- Type-II: Host OS
+
+- Hypervisor: additional attack surface

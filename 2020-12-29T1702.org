@@ -1,0 +1,42 @@
+* Secure software design 41: Software defined
+
+The evolution from hardware-based systems to software-based:
+- Software defined storage
+- Software defined networking
+  -> Content distribution networks
+
+* Secure software design 42: Data loss prevention
+
+DLP is primarily about preventing leaking of data out of the organization.
+- Also known as Data Leakage Prevention
+- Built into systems to detect cases where sensitive data is stored or transmitted improperly
+
+** DLP systems
+
+Use key words.
+Classification.
+Encryption challenges. The data thief can encrypt data he/she is trying to steal to prevent DLP system to detect the breach.
+Steganography.
+
+** Masking and obfuscation
+Hide sensitive data from unauthorized display or sharing
+Anonymization
+
+** Traffic analysis
+
+The ability to learn/determine information through observation of traffic patterns or communications channels without necessarily knowing the content of the messages
+- Inference
+
+Encryption does not always address the risk of traffic analysis
+
+** Encryption
+
+The encoding (alteration of the format) of data so that it cannot be understood by any person that does not possess the correct mechanism (key/system) necessary to decode the data.
+
+Purpose:
+- Protection of:
+  -> Data at rest
+  -> Data in transit
+
+
+

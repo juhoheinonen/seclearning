@@ -1,0 +1,29 @@
+* Secure software design 47: Programming language environments
+
+Separation between development and production
+
+Protection of production code
+
+Version control
+
+** .NET
+
+Executes in a software envrionment (as compared to a hardware-based environment)
+
+CLR
+- an application virtual machine
+- Provides services such as: security, memory management, exception handling
+
+CLR supplies managed code with services such as cross-language interaction, code access security, 
+object lifetime management and debugging and profile support.
+
+The risk associated with CLR settings is the ability to access external system resources, 
+call unmanaged code and acquire system privileges.
+
+** Java virtual machine
+
+Abstract machine that enables a computer to run a Java Programming
+Compiles or interprets Java source code into byte code for the native machine.
+
+** Type safety
+Attempts to prevent programming errors - ensure that a program operation is working on the right type of data
