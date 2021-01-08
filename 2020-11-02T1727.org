@@ -1,3 +1,811 @@
 * Software deployment, operations, and maintenance
 
+** Secure software deployment
 
+Perform implementation risk analysis
+
+Risk is a business related issue, not just IT
+
+*** Risk factors
+
+Assets: *data*, virtual machines etc.
+
+Threats
+
+Vulnerabilities
+
+*Relative attack surface quotient*
+
+*** Re-evaluation of risk
+
+Operational risk
+
+Production vs development
+
+*Future use of systems and changes to risk environment*
+
+** Asset categorization
+
+Confidentiality: sensitive data? If sensitive data processed, high impact.
+
+Integrity: Precision? Integrity of process?
+
+Availability: critical data or system?
+
+*** Operational risk factors
+
+Environment. Military base vs shopping mall. Physical, infrastructure.
+
+Human. Users, admins, managers, misactors.
+
+Procedural programs. Training, monitoring, change control, separation of duties.
+
+*** Implementation risk
+
+Failed rollout
+
+Security not enabled
+
+Improper use of system
+
+Lack of training
+
+"The risk associatioed with the implementation of the software should be examined carefully."
+- the users will always do unexpected things
+
+** Obtain security approval to operate
+
+*** Systems authorization
+
+Approval by an authorizing official for the system to operate
+
+*** Authorization decisions
+
+ATO (authorization to operate)
+
+IATO (interim allowal to operate). conditional, when certain Vulnerabilities were addresses. Only for maximum of 6 months. IATO is a failed system.
+
+IATT (interim approval to test). 
+
+DTO (denial to operate)
+
+**** ATO - based on the recommendations from the security control assessor
+Parallel process of security review throughout the SDLC
+Highlights areas of concern - during the development
+
+**** Separation of duties
+
+System owner may not independently deploy system without enterprise-based risk assessment.
+
+*** Risk acceptance
+
+Remediation
+
+POAMs (plan of action milestones, within next 30, 60, 90 days)
+
+Acceptance
+
+*** Exceptions
+
+Documented
+
+Approved
+
+Compensating controls
+
+Review - expired
+
+*** Re-authorization
+
+*Change in operational environment*
+
+Significant change
+
+Scheduled review
+- continuous monitoring
+
+"Requirements for security approval to operate may prevent breaches based on the 'push to market' or failure to appreciate security risks.
+
+** Environment hardening
+
+Environment hardening
+- stable infrastructure
+  -> networks: isolation - DMZ, devices
+  -> Databases. Databases must be secure.
+  -> Servers. Bastion host, all but absolutely necessary turned off.
+
+*** Environmental concerns
+
+Power
+
+Physical access
+
+Humidity
+
+Fire
+
+*** Licensing
+
+Number of licenses
+
+Software piracy.
+- Backup copies
+- More than one machines
+
+*** Credentials
+
+Job names
+
+Process IDs
+
+Certificates
+
+Missing/duplicate files
+
+*** Whitelisting
+
+Especially from another network
+
+Authorized process IDs
+
+Authorized actions
+
+** Access control
+
+*** Review access levels of:
+
+Developers
+
+Beta testers
+
+Project leads
+
+Contractors
+
+*** Setting access levels
+
+Admins
+
+Users
+
+Super-users
+
+Managers
+
+Auditors
+
+*** Access concepts
+
+Least privilege
+
+Need to know. Means that the users has a legimate reason to access something. Least privilege can then be implemented to limit that access and limit what the user can do with that something.
+
+Temporal access.
+
+*** Access control solutions
+
+Multiple paths to information
+
+Database views
+
+Content dependent access control. E.g. database table row contains field that tells that this row cannot be shown to users without same role.
+
+** Logging
+
+Access attempts: authorized and unauthorized.
+
+Changes to data: who, when, what.
+
+Errors
+
+*** Management
+
+Transfer of ownership
+Monitoring
+Enforcement of procedures
+Adhere to operating conditions
+
+*** Compliance
+
+Managers are responsible for ensuring:
+- compliance with regulations
+- reporting
+- assisting in investigations
+
+Before turning the software on be sure
+- access controls are set correctly
+- management is ready to assume ownership
+
+** Software deployment
+
+*** Models
+
+Parallel. Run old and new for some time simultaneously.
+
+Pilot. Run in some area, then after testing to everywhere.
+
+Hard cutover.
+
+Phased rollout.
+
+*** Risks
+
+"It didn't work".
+
+Unexpected effects *on other operations*.
+
+Performance issues: response time, learning curve.
+
+Loss of data integrity.
+
+*** Scheduling
+
+Backups
+
+Change control process
+
+Rollback
+
+*** Data migration plan
+
+Database updating
+- new columns
+
+Data synchronization
+
+Ability to read old data
+
+Completeness of data migration
+
+** Post-implementation support
+
+Developers
+
+Super-users
+
+Operations
+
+Security/audit
+
+*** post-implementation Security testing
+
+Logs enabled
+
+Errors addressed
+
+Access permissions set correctly
+
+Backups performed
+
+Penetration testing
+
+Vulnerability assessments
+
+Physical/environmental security
+
+User security
+
+*** Feedback
+
+Users
+
+Customers. Stickiness, or leave us.
+
+Administrators.
+
+Auditors.
+
+Managers.
+
+Compliance and privacy officers.
+
+"The secure rollout of software starts with preparation
+- scheduling
+- risk assessement
+- testing
+- feedback and review
+
+** Credentials
+
+Expired
+
+Class of certificate
+
+Proof of possession.
+
+*** Certificates
+
+Self-signed
+
+Certificate authority
+- Hierarchical trust
+- web of trust
+
+Key repository
+- Public key infrastructure
+- administration
+
+Change of organizational name
+- mergers/acquisitions
+
+Website registration
+- alternate names
+
+*** Intellectual property
+
+Source code
+
+Escrow. Lawyer has source code, that will be released if vendor does not bring its promises.
+
+Code obfuscation
+
+Reverse engineering
+
+** Software protection
+
+Patent
+
+Trademark
+
+Copyright
+
+Trade secret
+
+*** Work Production
+
+Non-disclosure agreements
+
+*Non-compete agreements*
+
+Contractors and third party applicability
+
+** Encryption keys
+
+Secure generation process.
+
+Random number generator (RNG).
+
+Secure distribution.
+
+Secure storage.
+- Retrievable from RAM?
+
+Expiry.
+
+*** Key storage
+
+Hardware security module (HSM)
+
+Key fob
+
+Smartcard
+
+Token
+
+*** Software licensing
+
+Installation keys
+
+Tracking the number of logins
+
+Fobs (kulkulätkät)
+
+Restriction to CPU serial number
+
+*** Secure configuration
+
+Hardening. Remove server ports and protocols not needed
+
+Network segmentation
+
+Security baselines
+- CMDB (configuration management database)
+
+Identity and access management (IAM)
+
+"Keys unlock access - one poor configuration setting can lead to a large breach"
+
+** Support patching
+
+Continuous improvement
+- new functionality
+- improved operations
+- better security
+
+*** Patching by bendor
+
+Identification of vulnerabilities
+- bug bounty
+
+Creation of patches
+
+Testing of patches
+
+Signing of patch
+
+*** Release management
+
+Combining changes. *Makes reverse engineering more difficult*.
+- Increase in risk.
+
+
+Easier for Admins
+- Scheduled
+- Awareness of release availability
+
+*** Digital shrink-wrap
+
+Signing code
+
+Verify source and integrity
+
+Protection from malware
+
+*** Patching by consumer
+
+Notice of patches available: automated download/installation?
+
+Download the patches
+
+Test (as much as possible)
+
+Scheduled
+
+Deploy
+
+Feedback
+
+** Vulnerability assessments
+
+Scheduled: required (PCI)
+
+Internal/external
+
+Creative/varied
+
+Known issues
+
+*** Pen testing
+
+Zero knowledge
+
+Partial knowledge
+
+Full knowledge: red team
+
+*** Resolution of findings
+
+Severity
+
+Compensating controls. Can't resolve problem but use compansating control.
+
+Availability of solutions.
+
+Risk acceptance level
+
+"Ensure that changes don't affect software security to worse direction"
+
+** Secure software maintenance
+
+Monitoring
+
+Incident response
+
+Log review
+
+Updates
+
+*** Monitoring
+
+Log review, precursors, events
+
+Unauthorized changes?
+
+Performance, availability, response time
+
+*** Logs
+
+Clipping level. Thresholds. 
+
+Retention.
+
+Protection. User has inserted password in user name field and it could be in log.
+- modification
+- Confidentiality
+
+*** Support for audit
+
+Access permissions
+
+Compliance
+
+Transaction review
+
+Error handling/outside of normal process flow
+
+*** Service level agreements
+
+Review for compliance
+- vendor/supplier
+- consumer
+
+Reporting
+
+Resolution of issues
+
+** Support incident response
+
+Events
+
+Incidents. We need detect incidents out of events.
+
+Problems. Causes of incidents.
+
+*** Incident managemtn
+
+Tracking and documentation (ticket id).
+
+Gathering information
+- Prioritization
+- Escalation and notification
+
+Containment
+- Isolate system
+
+Analysis
+- Internal versus external source
+
+Software bug or flaw
+
+
+Resolution
+- emergency fix
+  -> change control
+  -> *remove temporary fixes*
+  -> re-run program: checkpoints or restarts
+
+*** Fix damaged data
+
+Databases
+
+Files
+
+*** Lessons learned
+
+Improvements to
+- prevention
+- detection
+- response
+- policy
+- procedures
+- training
+- tools
+
+"Incidents will happen. The secret is to be prepared: have policy, plans, procedures. Respond effectively, support business strategy."
+
+** Root cause analysis
+
+Underlying cause
+
+*Reacting to symptoms*
+
+Repeated incidents
+
+*** Root cause
+
+Procedural problem
+
+Personnel issues
+- lack of training
+- indifference
+
+Ineffective controls
+
+Accumulation of small issues
+
+*** Problem Resolution
+
+Workaround
+Patch
+Training
+Test changes
+Implement
+Feedback
+- continuous improvement
+Document changes
+
+*** Report to stakeholders
+
+Users
+
+Management
+
+Auditors
+
+Operations
+
+"Problem managemetn is looking beyond the symptoms" 
+"Communicate with stakeholders"
+
+** Support continuity of operations
+
+Criticality of software
+
+- Support business mission
+- regulatory requirements
+- cost of downtime. Reputation or money or customer confidence.
+
+*** COOP (continuity of operations): Redundancy
+
+Clustering 
+
+Multiple operational sites
+
+Redundant networks
+
+Backups
+- software
+- drivers
+- utilities
+- transactions (inputs)
+- databases
+- operating system
+- reports
+- access control lists (ACLs). So that after catastrophe we can restore correct access levels to correct people/roles.
+
+*** Rollback
+
+Backup copies of old versions of code: regression.
+
+Images.
+
+** Disaster recovery planning
+
+ISO22301
+
+NIST SP8000-34
+
+thebci.org
+drii.org
+
+*** BCMS (business continuity management system)
+
+Incident response planning
+
+Business continuity planning
+
+Disaster recovery planning (DRP)
+
+
+*** BCP (business continuity planning)
+
+BIA - understanding the organization. Business impact analysis.
+- Critical business functions (CBFs)
+  -> Maximum tolerable period of distribution (MTPD)/ maximum tolerable downtime of businest funcion (MTD)
+  -> RTO = recovery time objective
+  -> RPO = recovery point objective. Based often on last backup. Can you lose 4 days/4 hours/4 minutes of latest data?
+
+*** BIA - resource requirements
+
+Facilities
+
+People (skills)
+
+Equipment
+
+Data
+
+Supply chain
+
+*** Recovery strategies
+
+Manual workaround: temporary
+
+Outsource: cloud, service bureau
+
+*** Recovery strategies - HOT
+
+Multiple processing sites
+
+Mirrored sites
+
+Commercial hot site
+
+"BCP is focused on the continuity of *critical business functions*
+
+** Delayed recovery
+
+Mobile sites
+Warm sites
+Cold sites
+
+*** Mobile sites
+
+Equipment 
+Power
+Air conditioning
+Workspace
+Network connectivity
+
+*** Warm sites
+
+Partially equipped facility
+- Some equipment
+- Networks
+- Data: perhaps off-site data storage
+- Vendor agreements: how quickly vendor can bring missing equipment.
+- ready to operate in a few days/week
+
+*** Cold sites
+Facility that can be built into a data center-line
+
+Must have
+- Power
+- network
+- HVAC
+
+Recovery in weeks
+- Staged recovery
+
+*** Software recovery
+
+Licensing
+
+Backups
+
+Escrow
+
+Access control permissions
+
+Utilities
+
+"DRP must follow the priorities and cost restraints of the business"
+
+** Effective DRP
+
+*** Writing dissaster recovery plans
+Action oriented
+- procedural
+
+Must be able to work in a crisis
+- Even by people that didn't write the plan
+
+*** Testing the DRPs
+
+Recover from backup
+
+Restore functionality
+
+Access permissions
+
+Types of tests
+- checklist/desk check
+- tabletop/structure walkthrough
+- simulation
+- parallel
+- full interruption
+
+*** Maintenance of the DRP
+
+Changes in
+- Personnel
+- business processes
+- priorities
+- data format/quantity
+- patches/updates
+
+*** Audit of DRP
+
+Ensure the plan will work: observer tests
+
+Ensure Completeness
+
+Ensure Up-to-date
+
+Ensure training of staff 
+
+Ensure compliance with regulations, SLAs, policy
+
+"Plans provide a framework - must be flexible to accommodate changing crisis conditions."
+
+"Securely designed and built software is vulnerable if it is not deployed correctly."
