@@ -1,0 +1,564 @@
+* Secure lifecycle management
+
+** Identify security standards and frameworks
+
+covers entire software lifecycle
+- some areas addressed earlier
+
+
+focus on integratio of security into every phase
+
+ISO27034 - application security
+
+COBIT
+
+NIST SP800-37, 39
+
+** SDLC methodologies
+
+- waterfall
+- spiral
+- extreme programming
+- agile
+- rapid application development
+- modified prototyping
+
+** Requirements gathering
+
+Zachmann framework, how it be more responsible to business
+TOGAF
+SABSA
+
+** Supporting resources
+
+Critical security controls
+OWASP
+CVSS
+CWE
+NIST SP 800-64, 800-12, 14
+
+** Security documentation
+
+System security plan
+
+SSAA, NIACAP
+
+Security test plan
+
+Risk assessment report
+
+Vulnerability assessments
+
+Pen test reports
+
+Business continuity and disaster recovery plans
+
+"Security documentation should be ever green - always up to date"
+
+** Support governance risk, compliance (GRC)
+
+*** Governance
+
+Oversight, accountability, responsibility, ownership, guidance and direction, reporting
+
+Requires accurate, timely reporting
+
+Requires active involvement by management
+
+Requires knowledge of regulations
+
+Requires strategic vision
+
+*** Regulations
+
+Privacy
+
+Reliability (integrity)
+
+Accountability to customers
+
+Adherence to standards (NERC in energy industry)
+
+Financial prudence
+
+*** Compliance
+
+Monitoring our systems
+
+Reporting
+
+Issue resolution
+
+*** Legal issues
+
+Who owns intellectual property?
+
+Who owns data?
+- Outsourced
+- Cloud
+
+Reporting of a breach (e.g. GDPR)
+
+** Risk management
+
+Frame risk (context)
+
+Risk assessment
+
+Risk response (treatment)
+
+Risk Monitoring
+
+*** Frame risk
+
+Put border around risk, what's inside border
+
+Scope
+
+Budget
+
+Timelines
+
+Senior management commitment (management owns risk)
+
+"Through risk we have opportunity, it's not all negative."
+
+Risk appetite of organization
+
+Depth and rigor of risk assessment
+
+*** Risk assessment
+
+Assets
+
+Threats
+
+Vulnerabilities
+
+Controls (existing and planned)
+
+**** Approaches
+
+***** Quantitative risk assessment
+- monetary value of risk
+- single loss expectancy
+  -> Impact
+- annual rate of occurrence
+  -> likelihood
+- annual loss expectancy
+
+*Some risk is hard to quantify*
+- historical data?
+
+***** Qualitative risk assessment
+
+Risk ranking
+
+Scenario-based
+
+Compare impact, likelihood and asset value
+
+Semi-quantitative risk assessment
+
+**** Risk analysis
+
+Evaluate level of risk
+- prioritization
+- impact on business mission
+- evaluate effectiveness of controls
+
+Generate risk assessment report (RAR)
+
+"Risk is an essential element of business - it needs to be managed"
+
+** Risk response and monitoring
+
+*** Response is based on:
+
+Cost-benefit analysis
+
+Available solutions
+
+Other projects
+
+Budget
+
+*Risk acceptance by management*
+
+Regulations
+
+*** Risk response (treatment)
+
+Accept
+
+Avoid
+
+Transfer/share (share with other companies or pay insurance)
+
+Mitigate (reduce)
+- use controls, training etc.
+
+*** Residual risk
+
+Level of risk that remains after implementation of controls
+-> Must be <= risk level accepted
+
+*** Risk monitoring
+
+Monitoring and review of risk factors
+- Changes in
+  -> Asset values
+  -> Threats
+  -> Vulnerabilities
+
+Reporting to management
+
+*** Risk registerv
+
+Various risks
+
+Status of risk mitigation efforts
+
+"Risk monitoring tells management of status and maturity of informations security program."
+
+"Risk evolves continuosly."
+
+** Secure configuration
+
+*** Transition
+
+Crossing the threshold 
+- moving into production
+- ensure separation of duties
+- backups and rollbacks
+
+*** Risk associated with rollout
+
+Data integrity
+
+Database performance (tested with smaller datasets)
+
+Training of users
+
+*** Version control
+
+Source code-conversion-map-vector
+Object code (executable)
+
+*** Risks with versions
+
+Source code and object code the same version
+
+Older compilers available?
+
+Changes to link libraries
+
+*** Documentation challenges
+
+Up-to-date
+
+*Include ALL changes*
+
+Overwrite previous changes
+
+*** Hardening
+
+Disable unnecessary features
+- admin accounts
+- admin functions
+- remote access
+- vendor-supplied default accounts and passwords
+
+*** Patching
+
+Network security
+
+Server
+
+Database
+
+Operating system
+
+Utilities (malware masquerading as the right software)
+
+Hardware
+
+** The operational environment
+
+HVAC - heating, ventilation, and air conditioning
+
+Water (humidity)
+- pipes/overflow
+- flooding
+
+Power - clean and stady power
+- faults 
+- blackouts (longer failure)
+- sag/brownouts (temporarily high demand for electricity)
+- surge/spike
+
+Fire
+- prevent
+- detect
+- suppress -> classes of fire (wood vs. oil/gasoline fire)
+
+Physical access
+- Locks
+- biometrics
+- visitors (people masquerading as technicians)
+- network access
+
+"good to train personnel agains social engineering"
+
+** Version control
+
+Document and track changes
+
+Document approvals
+
+Prevent overwriting of previous changes
+
+Retain previous versions
+
+*** Separation of environments
+- development
+- quality assurance
+- production
+- backups
+
+Enforce separation of duties
+
+*** Transition to production
+
+Approval
+- security authorization
+
+*** Transition schedule
+
+- minimize impact on business
+- training of users
+- post-implementation Support
+- advise operations
+  -> what is normal execution time?
+
+*** Ownerships
+
+Formal passing of ownership from development to operational teams
+
+*** Permission management
+
+Users
+
+Admins
+
+Auditors
+
+Managers
+
+** Establish security metrics
+
+Define desired levels of security
+
+- quantitative not qualitative
+- objective not subjective
+- consistent
+- impartial
+- *linked to business goals*
+
+*** What makes for a 'healthy' system?
+
+Accesss control
+
+Incident response
+
+Resilience
+
+Performance (response time)
+
+*** Metrics
+
+*Measure what is important*
+
+Focus on consistent measurement criteria
+
+*** Gap analysis
+
+Current state
+
+Desired state (based e.g. on ISO or framework)
+
+Perception is the enemy of reality
+- many people 'thionk' a system is not working to desided levels of performance
+
+** Establish security milestones
+
+Roadmap
+- Defined objectives
+- define route to reach objective
+  -> Allotted resources- people (skills), time, budget
+- Milestones (indication of process)
+
+*** POAM - plan of action and milestones    
+
+Defined start and end dates
+
+Regular reporting
+
+Timely identification of problems
+
+Allocation of resources
+
+*** Risk register
+- updated as issues are resolved
+  -> retest
+- new issues added as they are discovered
+  -> incidents
+  -> audits
+  -> compliance review
+  -> *user complaints*
+
+*** Systems authorization
+
+Significant changes to the operating environment, application functionality or change in ownership may result
+in a need to review and re-authorize the system for operation
+
+*** Keys
+
+Key goal indicators
+
+Key perfomance indicatiors
+
+Key risk indicators (prewarning)
+
+*** Trends and patterns
+
+Are the performance levels slipping?
+
+New expectations from the business
+
+*** Review of Performance
+Functional:
+- operating criteria
+
+Non-functional: 
+- training of adminstrators and users
+- monitoring and log review
+- change control
+
+Metrics and milestones indicate the 'health' of a system
+
+** Decommission software
+
+*** End of life
+
+- newer, better programs available
+- too difficult/expensive to maintain
+- lack of need for functionality
+- hardware incompatiblity
+
+Policies
+Asset management
+Secure deletion
+
+*** Procedures
+
+Notify all stakeholders
+
+Migrate to new system?
+
+Backup
+- applications
+  -> source code
+  -> object code
+- compilers
+- utilities
+- documentation
+- licenses
+- encryption keys
+
+*** Retention
+
+Ability to recoved old data?
+
+Regulatory enquiries
+
+Lifespan of media?
+
+*** Decommission
+
+Disable system
+
+Remove from job schedules
+
+Remove access permissions
+
+Update docs and operating manuals
+
+Update CMDB
+
+*** Linkages
+
+Failure to remove connection-local-set-profiles
+Failure due to missing input files of downstream system
+Errors with monitoring system
+
+"Ensure software is decommissioned in a secure manner"
+
+"Ensure all stakeholders are informed"
+
+** Data destruction
+
+*** Data retention Policies
+
+Legal requirements
+
+Business needs
+
+Fear of liability
+
+Cost of retention (storage is quite cheap)
+
+*** End of life
+
+Archival?
+
+Backups (was data purged when we left a cloud service provider)
+
+Recovery
+
+*** Procedures
+
+Data disposal
+- Deletion (doesn't always overwrite old data)
+- Overwriting
+- Purging
+- Degaussing (randomize bits with magnet)
+- crypto shredding/erasure
+- physical destruction 
+
+Residual data - data remanence
+
+- HDD
+- SSD (even more difficult)
+- Tapes
+- Optical disks
+
+*** Archival
+
+Historical significance (memorabilia)
+
+Age of media (paper, parchment)
+
+Ability to read old media?
+
+Encryption keys
+
+"Ensure data is retainer or disposed of according to policy"
+"Secure data deletion"
+
+"Secure lifecycle management ensures that software is deployed in a secure manner and;"
+
+"Remains secure throughout its lifecycle."
+
+"Disposed of in a secure manner."
+

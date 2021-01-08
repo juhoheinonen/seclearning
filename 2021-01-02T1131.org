@@ -1,0 +1,42 @@
+* Secure software design 48: design security review
+
+Review of design
+- Single points of failure
+- backups
+- logging
+- management/administrative functions
+
+** Error and exception handling
+
+Careful examination of the software design should include error and exception handling
+- Ensure that all errors are identified, logged and resolved
+
+** Appropriate controls
+
+Validation of attack surface
+
+Validation of risks
+
+Validation of threat models
+
+** Signoff from the user on the design
+
+** Review with enterprise architects on interoperability and compliance with standards of organization
+
+** Advise business continuity and disaster recovery of project progress
+
+** Project management/administrative
+
+'Failure to plan' means 'plan to fail'
+
+Project management is important to:
+
+- Schedule and coordinate all the project activities
+- Ensure that all activities are completed 
+- Prevent scope creep
+
+** Steering committee
+
+Tries to help keep project on rails or to resolve any challenges the project teams is facing
+
+"The design of the system must address both functional and security requirements."

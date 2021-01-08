@@ -1,0 +1,351 @@
+* Secure software implementation and programming 1: Follow secure coding practices
+
+Input validation
+- perhaps most important software controls
+- integrity of data and process
+- confidentiality of sensitive data
+- avoids loss of availability (resource exhaustion)
+
+Allowable values
+- sql injection
+- xss
+
+Allowable range
+- data checks and format
+
+Allowable size
+- buffer overflow
+
+
+** Canonicalization
+
+Characters
+
+www addresses
+
+One can circumvent firewall using different form of address
+
+*Whitelisting*
+
+Blacklisting
+
+Neither one is perfect, sometimes combination of these needed
+
+"First step in defensive programming is to prevent improper input."
+
+* Secure software implementation and programming 2: Injection, session management and xss
+
+** Sql injection
+
+Avoid use of interpreter-mode-alist
+Use of parameterized interface
+Escape special scharacters
+White list validation
+
+** Broken authentication and session management
+
+Take someone other's identity
+
+Sessions that don't timeout!
+
+** Insecure direct object reference
+
+* Secure software implementation and programming 3: Sensitive data exposure
+
+Theft or modification of sensitive data
+- Fraud
+- Privacy
+- Identity theft
+
+Protect data's state in transit and in rest
+
+** DLP (data loss prevention) and DRM (digital rights management)
+
+** Reports
+
+Print end of report to demonstrate complete report generation
+
+** Least privilege
+
+Database views
+
+Obfuscation
+
+Tokenization (replace sensitive data with another token value)
+
+** Encryption
+
+Use native encryption capabilities of the DBMS
+
+Protection of encryption keys
+- Not retrievable from memory or reverse engineering 
+
+* Secure software implementation and programming 3: PA-DSS
+
+Payment card industry
+
+The payment application data security standard outlines many excellent coding practices
+
+*Do not retain full track data or CVC2*
+
+Protect wireless transmissions
+
+Have a formal process for secure development.
+
+"The good coding practices specified in PA-DSS are of value to all developers and applications 
+regardless of whether the application processes payment card data or not."
+
+* Secure software implementation and programming 4: Memory management
+
+** Type safety
+
+Ensure that right type of data is being used by system operators.
+
+Static typing - rules are checked at time of compile
+
+Dynamic typing - rules are checked at run time
+
+** Memory locality
+
+Temporal locality
+
+Spatial locality
+
+Performance optimization
+
+** Memory management issues
+
+Buffer overflows
+
+ASLR - address space layout randomization
+
+Architectures: Harvard, Von Neumann
+
+* Secure software implementation and programming 5: secure coding environment
+
+Separate development environment
+- separate QA or test environment
+
+Version control
+- regression
+
+Declarative security modeling
+
+Imperative security model
+
+RACE conditions
+- contention for resources
+- unhealthy dependence on other/sequential events
+
+- TOCTOU - time of check, time of use 
+
+The following conditions must be fulfilled for a concurrent race condition:
+1) multiple operations at the same time
+2) objects are shared between concurrent operations
+3) one operation must change the state of the race object
+
+- MUTEX can be used to prevent race condition
+- Sequential events - triggers
+- RACE windows - allowable time slot for operations
+
+** ACID test
+
+Atomicity - all or nothing - all the steps of the transaction completes entirely or not at all
+
+Consistency - enforces integrity rules
+
+Isolation - one transaction can't interfere with another transaction
+
+Durability - effects of a completed (committed) transaction are permanent (will survive a system failure)
+
+* Secure software implementation and programming 6: Error handling and logging
+
+** Error handling
+
+Try to identify all potential error conditions
+- invalid inpuit
+- wrong sequence of events 
+- termination of an incomplete process
+- equiment or network failure
+
+Many errors are accidental
+- human mistakes
+- misunderstanding
+- complexity of a procedure
+
+Threat modeling
+- intentional attacks
+- attempts to
+  disable system
+  steal data
+  gain access to another systems
+
+*Fail secure*
+- not reveal sensitive data when fail
+
+*Fail safe*
+- allow exit component after failure
+
+*Fail open*
+- allow try again
+
+*Fault tolerant*
+- identify problem and take steps to rectify the problem
+
+** Error messages
+
+*Non-verbose!*
+
+Consistent across systems
+
+* Secure software implementation and programming 7: Fixing errors
+
+Divide by zero
+
+Invalid sql call
+
+* Secure software implementation and programming 8: Logging
+
+Who did what on system
+- When to capture log data - close to source of event?
+- log retention
+- log review
+
+Audit hooks
+
+Maintenance hooks
+
+Integrated testing facility (ITF)
+
+"Error and exception handling shouild be designed into the software to be prepared for the many types of unpredictable
+actions that a user or system may encounter."
+
+* Secure software implementation and programming 9: Secure by
+
+The goal is software that is inherently secure
+
+* Secure software implementation and programming 10: Code protection
+
+Protection from
+- tampering
+- reverse engineering
+- disclosure of code intellectual property
+  -> Program logic
+
+Obfuscation
+
+Code signing
+- digital certificate
+  -> Authenticode
+  -> Adobe Air
+
+"Code signing is necessary to build trust in code."
+
+* Secure software implementation and programming 11: input/output validation
+
+Many OWASP vulnerabilities can be prevented using good input validation
+
+Whitelists/blacklists
+
+If invalid input, in some case good be good to log out the user
+
+OWASP XSS prevention cheat sheet
+
+Authorization:
+- OAuth - tokens
+- OpenID - federation protocol
+
+* Secure software implementation and programming 12: Testing and verification
+
+Code review
+- Wass all of the designed functionality delivered
+- check that documentation has been kept up to date
+- code standards are followed
+- are there unauthorized functionality (Easter eggs)
+
+Code review methods
+- Unit testing
+- Business function?
+- Security
+- Error handling
+
+Manual peer review
+
+Challenges
+- time
+- expertise
+- personal bias
+
+Advantages
+- consistency
+- mentoring
+- "fresh eyes"
+
+Static testing - stopped not running
+- code review
+- walkthrough
+
+Dynamic - operating/executing
+- black box
+
+** White box
+
+Code functionality
+Step by step
+Ensure each line is tested
+Introduction of error conditions during the test
+
+** Black box*
+
+Testing the software as black box without ability to see into code
+- vendor supplied
+- functional test
+- compliance with stated operations
+
+** Review for known vulnerabilities
+
+e.g. Common weakness enumeration
+Top 20 critical controls
+
+"A software program should never be developed that contains vulnerabilities that are already known and documented." 
+
+We should check that logging is working.
+
+** Unit test risks
+
+Developer may be running the code at a privileged access level
+
+Test environment may not reflect production
+
+Small datasets
+
+** Drivers and stubs
+
+** Code reuse
+
+Legacy systems
+
+Legacy code
+
+** Third party code
+
+No access to source code
+May contain hidden vulnerabilities?
+Patched?
+
+Code access security
+- verify the source of the code
+Documented
+
+** Systems engineering - building systems right
+
+System of systems engineering
+
+* Secure software implementation and programming 13: Malware
+
+Backdoors/wormholes
+- Usually installed after implementation
+
+Review of code for undocumented features
+
+"There is no such thing as 'accidental discovery'".
